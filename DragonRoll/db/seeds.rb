@@ -12,3 +12,5 @@ User.destroy_all
 user1 = User.create(username: 'tickle_me_elmo', password: 'password')
 user2 = User.create(username: 'demo_user', password: 'password')
 user3 = User.create(username: 'cheetah_boys', password: 'password')
+user4 = User.create(username: 'JD_the_boot_tickler', password: 'password')
+user5 = User.create(username: 'Jacky_vacuums_everything', password: 'password')

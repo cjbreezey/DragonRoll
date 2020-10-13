@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ .landing {
+     background: url(https://i.pinimg.com/originals/32/4e/54/324e540ce08f3a5a21405290a3562f32.jpg);
+ }
+
+ /* .form-container {
+     display: flex;
+     justify-content: flex-start;
+     background-color: #EF9958;
+ } */
