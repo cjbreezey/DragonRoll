@@ -5,8 +5,20 @@ import {login, logout, signup} from './actions/session_actions'
 import Root from './components/root'
 
 document.addEventListener("DOMContentLoaded", () => {
+    let store;
+    if (window.currentUser) {
+        const defaultState = {
+            entities: {
+                users: { [window.currentUser.id]: window.currentUser }
+            },
+            session: { id: window.currentUser.id }
+        };
+        store = configureStore(defaultState);
+        delete window.currentUser;
+    } else {
+        store = configureStore();
+    }
     const root = document.getElementById('root');
-    const store = configureStore();
     ReactDom.render(<Root store={store} />, root);
 
     // window testing

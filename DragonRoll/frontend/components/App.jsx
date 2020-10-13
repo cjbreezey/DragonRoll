@@ -3,16 +3,18 @@ import { Route } from 'react-router-dom'
 import LoginFormContainer from '../components/session/login_form_container'
 import SignupFormContainer from '../components/session/signup_form_container'
 import GreetingContainer from '../components/greetings/greeting_container'
+import { AuthRoute } from '../util/route_util'
+import Landing from './landing/landing'
 
 const App = () => (
     <main>
         <div>
-            <h1>DragonRoll</h1>
             <Route exact path="/" component={GreetingContainer} />
         </div>
-
-        <Route path="/login" component={LoginFormContainer} />
-        <Route path="/signup" component={SignupFormContainer} />
+        {/* <switch> */}
+            <AuthRoute path="/login" component={Landing} />
+            <AuthRoute path="/signup" component={Landing} />
+        {/* </switch> */}
     </main>
 
 );

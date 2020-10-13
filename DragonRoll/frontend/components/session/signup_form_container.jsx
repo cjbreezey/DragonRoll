@@ -18,7 +18,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch) => {
     return ({
         processForm: (form) => dispatch(signup(form)),
-        clearErrors: () => dispatch(clearErrors())
     })
 }
 
