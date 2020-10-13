@@ -4,7 +4,7 @@ import LoginFormContainer from '../components/session/login_form_container'
 import SignupFormContainer from '../components/session/signup_form_container'
 import GreetingContainer from '../components/greetings/greeting_container'
 import { AuthRoute } from '../util/route_util'
-import Landing from './landing/landing'
+import Landing from './splash/splash'
 
 const App = () => (
     <main>
