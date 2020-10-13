@@ -53,7 +53,6 @@ class SessionForm extends React.Component {
 
 
     render() {
-        // const demo = {username: "demo", password: 'password'};
         
         let errors = this.state.errors.map((el, idx) => {
             return <li key={idx}>{el}</li>

@@ -1,0 +1,92 @@
+.splash-title {
+    text-shadow: 3px 3px black;
+    padding-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.splash-tag {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+.splash-content {
+    padding-left: 150px;
+    padding-top: 75px;
+    color: white;
+    /* padding-bottom: 25px; */
+}
+
+.form-container {
+     display: flexbox;
+     justify-content: flex-start;
+     align-content: center;
+     position: relative;
+     height: 350px;
+     width: 400px;
+     border-radius: 1.5em;
+     box-shadow: 0px 0px 35px 2px rgba(0,0,0,0.5);
+}
+
+.form {
+    padding: 25px 50px 25px 70px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.form-title {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.form-type {
+    margin-bottom: 50px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+    margin-top: 10px;
+    background: none;
+}
+
+.switch-form-link {
+    margin-top: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-input {
+    margin-top: 20px;
+    font-weight: 600;
+    background: none;
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid black;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+}
+
+.form-btn {
+    background: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 4px 4px 4px 4px;
+}
+
+.demo-btn {
+    background: none;
+}
+
+.form-errors {
+    color: black;
+    margin-top: 5px;
+    font-size: 14px;
+}

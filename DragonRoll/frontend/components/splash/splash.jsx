@@ -17,7 +17,7 @@ class Splash extends React.Component {
 
     renderForm() {
         const path = this.props.match.path;
-        if (path === '/' || path === '/login') return <LoginFormContainer swapForms={this.swapForms} />;
+        if (path === '/login') return <LoginFormContainer swapForms={this.swapForms} />;
         else return <SignupFormContainer swapForms={this.swapForms} />;
     }
 
@@ -28,7 +28,7 @@ class Splash extends React.Component {
                     <h1 className="splash-title">
                         Welcome to DragonRoll!
                         <br />
-                        <p className='splash-tag'>The #1 Free Anime Streaming Service</p>
+                        <p className='splash-tag'>The #1 Free Anime Streaming Service </p>
                     </h1>
                     {this.renderForm()}
                 </div>
