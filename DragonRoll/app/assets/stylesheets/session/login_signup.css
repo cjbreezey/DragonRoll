@@ -81,9 +81,13 @@
     padding: 4px 4px 4px 4px;
 }
 
+.form-btn {cursor: pointer;}
+
 .demo-btn {
     background: none;
 }
+
+.demo-btn {cursor: pointer;}
 
 .form-errors {
     color: black;

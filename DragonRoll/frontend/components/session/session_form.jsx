@@ -38,16 +38,45 @@ class SessionForm extends React.Component {
             return <h3 className="form-title">Sign up for free!</h3>;
     }
 
-    demoLogin(e) {
-        e.preventDefault();
-        this.props.demoLogin()
-    }
-
     renderDemo() {
         if (this.props.formType === "Login") {
             return (
                 <input type="submit" className="form-btn" onClick={this.demoLogin} value="Demo Login" />
             )
+        }
+    }
+
+    demoLogin(e) {
+        e.preventDefault()
+        const demo = { username: "demo", password: "password" }
+        const speed = 100;
+
+        if (this.state.username !== demo.username) {
+            const inputUsername = setInterval(() => {
+                if (this.state.username !== demo.username) {
+                    const temp = demo.username.slice(0, this.state.username.length + 1);
+                    this.setState({ username: temp })
+                } else {
+                    clearInterval(inputUsername);
+                    animatePW();
+                }
+            }, speed)
+        }
+        const animatePW = () => {
+            if (this.state.password !== demo.password) {
+                const inputPassword = setInterval(() => {
+                    if (this.state.password !== demo.password) {
+                        const temp = demo.password.slice(0, this.state.password.length + 1);
+                        this.setState({ password: temp });
+                    } else {
+                        clearInterval(inputPassword);
+                        this.props.demoLogin(demo).then(
+                            () => {
+                                this.props.history.push("/home")
+                            })
+                    }
+                }, speed);
+            }
         }
     }
 

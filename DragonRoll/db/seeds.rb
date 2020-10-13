@@ -12,3 +12,7 @@ User.destroy_all
 user1 = User.create(username: 'tickle_me_elmo', password: 'password')
 user2 = User.create(username: 'demo', password: 'password')
 user3 = User.create(username: 'cheetah_boys', password: 'password')
+
+# creating Animes
+
+# Anime1 = Anime.create(title: 'God of High School', description: 'test')
