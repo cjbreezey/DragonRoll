@@ -2,7 +2,7 @@ import React from 'react';
 import SignupFormContainer from '../session/signup_form_container'
 import LoginFormContainer from '../session/login_form_container'
 
-class Landing extends React.Component {
+class Splash extends React.Component {
     constructor(props) {
         super(props);
 
@@ -38,4 +38,4 @@ class Landing extends React.Component {
 }
 
 
-export default Landing;
+export default Splash;

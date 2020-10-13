@@ -4,7 +4,7 @@ import LoginFormContainer from '../components/session/login_form_container'
 import SignupFormContainer from '../components/session/signup_form_container'
 import GreetingContainer from '../components/greetings/greeting_container'
 import { AuthRoute } from '../util/route_util'
-import Landing from './splash/splash'
+import Splash from './splash/splash'
 
 const App = () => (
     <main>
@@ -12,8 +12,8 @@ const App = () => (
             <Route exact path="/" component={GreetingContainer} />
         </div>
         {/* <switch> */}
-            <AuthRoute path="/login" component={Landing} />
-            <AuthRoute path="/signup" component={Landing} />
+            <AuthRoute path="/login" component={Splash} />
+            <AuthRoute path="/signup" component={Splash} />
         {/* </switch> */}
     </main>
 

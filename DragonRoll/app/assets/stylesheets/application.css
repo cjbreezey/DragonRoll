@@ -106,6 +106,10 @@
     padding: 4px 4px 4px 4px;
 }
 
+.demo-btn {
+    background: none;
+}
+
 .form-errors {
     color: black;
     margin-top: 5px;
