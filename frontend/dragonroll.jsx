@@ -3,6 +3,7 @@ import ReactDom from 'react-dom'
 import configureStore from './store/store';
 import {login, logout, signup} from './actions/session_actions'
 import Root from './components/root'
+import { fetchAnime, fetchAnimes } from './actions/anime_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -26,5 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.login = login;
     window.signup = signup;
     window.logout = logout;
+    window.fetchAnimes = fetchAnimes
+    window.fetchAnime = fetchAnime
     // window testing
 })

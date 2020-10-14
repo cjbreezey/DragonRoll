@@ -27,7 +27,7 @@
 
 .social-links {
     float: right;
-    padding-right: 250px;
+    padding-right: 100px;
 }
 
 .social-links li {
@@ -51,7 +51,6 @@
     clear: both;
 }
 
-
 .navbar-links ul {
     margin: 0;
     padding: 0;
@@ -60,11 +59,19 @@
 
 .navbar-links li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 25px;
     padding-top: 10px;
     padding-bottom: 5px;
 
     position: relative;
+}
+
+.search-container input {
+    display: inline-block;
+}
+
+.search-container button {
+    color: orange;
 }
 
 .github {
