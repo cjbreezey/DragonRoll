@@ -18,12 +18,14 @@
 @import './session/login_signup.css';
 
 .splash {
-     background: url('login.png');
+     background-image: image-url('login.png');
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center center;
      height: 100vh;
      width: 100vw;
+     /* z-index: -1;
+     position: absolute; */
 }
 
 .logo {

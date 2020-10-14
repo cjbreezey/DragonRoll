@@ -24,6 +24,7 @@ class Splash extends React.Component {
     render() {
         return (
             <div className="splash">
+                {/* <img src={window.login}/> */}
                 <div className="splash-content">
                     <h1 className="splash-title">
                         Welcome to DragonRoll!
