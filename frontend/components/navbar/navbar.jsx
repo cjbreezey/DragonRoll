@@ -17,24 +17,30 @@ class Navbar extends React.Component {
     render() {
         if (this.props.user) {
             return (
-                <div>
-                    <a href='/'>
-                        <img className='logo' src={window.logo}></img>
-                    </a>
-                    <Link to='/'>DragonRoll</Link>
-                    <button onClick={this.handleClick}>Logout</button>
-                </div>
+                <main className='nav-bar-container'>
+                    <div className='nav-bar'>
+                        <a href='/'>
+                            <img className='logo' src={window.logo}></img>
+                            DragonRoll
+                        </a>
+                        <button onClick={this.handleClick}>Logout</button>
+                    </div>
+                </main>
             )
         } else {
             return (
-                <>
+                <div>
+                    <a href='/'>
+                        <img className='logo' src={window.logo}></img>
+                        DragonRoll
+                    </a>
                     <Link to={`/signup`}>
                         <button>Sign Up</button>
                     </Link>
                     <Link to={`/login`}>
                         <button>Login</button>
                     </Link>
-                </>
+                </div>
             )
         }
     }
