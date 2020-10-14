@@ -22,18 +22,18 @@ export default ({ user, logout }) => {
                         </NavLink></a>
                     </li>
                     <li>
-                        <NavLink to="/login">
+                        <a><NavLink to="/login">
                             <i className="far fa-bookmark">
                                 <div className='nav-text'><span>Bookmarks</span></div>
                             </i>
-                        </NavLink>
+                        </NavLink></a>
                     </li>
                     <li>
-                        <NavLink to="/login">
+                        <a><NavLink to="/login">
                             <i className="far fa-user-circle">
                                 <div className='nav-text'><span>Log in</span></div>
                             </i>
-                        </NavLink>
+                        </NavLink></a>
                     </li>
                 </ul>
             </nav>
@@ -74,18 +74,18 @@ export default ({ user, logout }) => {
                         </NavLink></a>
                     </li>
                     <li>
-                        <NavLink to="/login">
+                        <a><NavLink to="/login">
                             <i className="far fa-bookmark">
                                 <div className='nav-text'><span>Bookmarks</span></div>
                             </i>
-                        </NavLink>
+                        </NavLink></a>
                     </li>
                     <li>
-                        <NavLink to="/login">
+                        <a><NavLink to="/login">
                             <i className="far fa-user-circle">
                                 <div className='nav-text' onClick={logout}><span>Log Out</span></div>
                             </i>
-                        </NavLink>
+                        </NavLink></a>
                     </li>
                 </ul>
             </nav>

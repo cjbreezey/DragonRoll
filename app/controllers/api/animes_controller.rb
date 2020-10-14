@@ -5,7 +5,7 @@ class Api::AnimesController < ApplicationController
     end
 
     def index
-        @anime = Anime.all
+        @animes = Anime.all
     end
 
 end
