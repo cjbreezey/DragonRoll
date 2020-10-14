@@ -1,12 +1,11 @@
 class Api::AnimesController < ApplicationController
 
-    # def show
-    #     @anime = Anime.find(params[:id])
-    #     render :show
-    # end
+    def show
+        @anime = Anime.find(params[:id])
+    end
 
-    # def index
-    #     @anime = Anime.all
-    # end
+    def index
+        @anime = Anime.all
+    end
 
 end

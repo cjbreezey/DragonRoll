@@ -13,5 +13,9 @@ class Anime < ApplicationRecord
 
     has_one_attached :photo
 
+    has_many :tags
+    has_many :videos
+    belongs_to :bookmark
+
 end
 

@@ -9,6 +9,7 @@ import NavbarContainer from './navbar/navbar_container'
 
 const App = () => (
     <main>
+        <Route exact path='/' component={NavbarContainer} />
         <div>
             {/* <Route exact path="/" component={GreetingContainer} /> */}
         </div>
@@ -16,7 +17,6 @@ const App = () => (
             <AuthRoute path="/login" component={Splash} />
             <AuthRoute path="/signup" component={Splash} />
         {/* </switch> */}
-        <NavbarContainer />
     </main>
 
 );

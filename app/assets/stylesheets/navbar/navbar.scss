@@ -1,0 +1,76 @@
+.logo img{
+    height: 30px;
+    padding-left: 20px;
+    // vertical-align: middle;
+}
+
+.logo {
+    display: flex;
+    font-size: 25px;
+    color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    // transition: all 200ms ease-in-out;
+
+}
+
+.loggedOut-nav-bar {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    // padding-top: 10px;
+    position: relative;
+}
+
+.nav-bar-links {
+    display: flex;
+    padding-top: 10px;
+    height: 40px;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.fas {
+    font-size: 18px;
+    color: orange;
+    // background-color: teal;
+    // width: 25px;
+}
+
+.far {
+    font-size: 18px;
+    color: orange;
+    // width: 25px;
+}
+
+.nav-text {
+    float: right;
+    width: 70px;
+    font-weight: 700;
+    padding-right: 45px;
+    padding-left: 4px;
+    color: orange;
+}
+
+.nav-text span {
+    display: block;
+    // width: 50px;
+}
+
+.social-links {
+    padding-left: 1rem;
+    color: inherit;
+}
+
+.github {
+    height: 40px;
+    width: 40px;
+    // display: flex;
+    vertical-align: middle;
+}
+
+.linkedin {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
