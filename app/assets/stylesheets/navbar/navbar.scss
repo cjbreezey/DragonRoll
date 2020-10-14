@@ -1,76 +1,86 @@
-.logo img{
-    height: 30px;
-    padding-left: 20px;
-    // vertical-align: middle;
+.logo {
+    // background-color: orange;
+    padding-left: 10px;
+    float: left;
+    height: 40px;
 }
 
-.logo {
-    display: flex;
-    font-size: 25px;
+.logo-text {
+    // background-color: orange;
+    font-size: 45px;
     color: orange;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 700;
-    // transition: all 200ms ease-in-out;
-
+    font-weight: 550;
+    width: 50px;
 }
 
-.loggedOut-nav-bar {
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    // padding-top: 10px;
-    position: relative;
-}
-
-.nav-bar-links {
-    display: flex;
-    padding-top: 10px;
-    height: 40px;
-    vertical-align: middle;
-    padding-right: 15px;
-}
-
-.fas {
-    font-size: 18px;
-    color: orange;
-    // background-color: teal;
-    // width: 25px;
-}
-
-.far {
-    font-size: 18px;
-    color: orange;
-    // width: 25px;
-}
-
-.nav-text {
+.navbar-links {
     float: right;
-    width: 70px;
-    font-weight: 700;
-    padding-right: 45px;
-    padding-left: 4px;
-    color: orange;
+    padding-right: 15px;
+    display: flex;
+    text-align: center;
 }
 
-.nav-text span {
-    display: block;
-    // width: 50px;
+.navbar-links span {
+    font-size: 20px;
 }
 
 .social-links {
-    padding-left: 1rem;
-    color: inherit;
+    float: right;
+    padding-right: 250px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+
+.loggedOut-nav-bar {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+.loggedOut-nav-bar a:hover {
+    font-size: larger;
+}
+
+.loggedOut-nav-bar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    position: relative;
 }
 
 .github {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     // display: flex;
     vertical-align: middle;
 }
 
 .linkedin {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     vertical-align: middle;
+}
+
+.fas, .far {
+    color: orange;
+    text-decoration: none;
 }
