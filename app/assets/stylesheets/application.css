@@ -18,7 +18,7 @@
 @import './session/login_signup.css';
 
 .splash {
-     background: image-url('login.png');
+     background: url('login.png');
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center center;
