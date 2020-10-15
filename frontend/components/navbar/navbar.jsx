@@ -99,8 +99,8 @@ export default ({ user, logout }) => {
                     <li>
                         <a>
                             <NavLink to="/login">
-                            <i className="far fa-user-circle">
-                                <div className='nav-text' onClick={logout}><span>Log Out</span></div>
+                            <i className="far fa-user-circle" onClick={logout}>
+                                <div className='nav-text'><span>Log Out</span></div>
                             </i>
                             </NavLink>
                         </a>

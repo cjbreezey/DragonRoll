@@ -22,12 +22,17 @@
 }
 
 .navbar-links span {
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.nav-text span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: none;
 }
 
 .social-links {
     float: right;
-    padding-right: 100px;
+    padding-right: 175px;
 }
 
 .social-links li {
@@ -39,6 +44,7 @@
     width: 100vw;
     margin: 0 auto;
     background-color: whitesmoke;
+    padding-top: 15px;
 }
 
 .loggedOut-nav-bar a:hover {
@@ -59,7 +65,7 @@
 
 .navbar-links li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 15px;
     padding-top: 10px;
     padding-bottom: 5px;
 
@@ -90,4 +96,5 @@
 .fas, .far {
     color: orange;
     text-decoration: none;
+    font-weight: 500px;
 }
