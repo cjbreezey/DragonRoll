@@ -47,8 +47,12 @@
     padding-top: 15px;
 }
 
-.loggedOut-nav-bar a:hover {
+.loggedOut-nav-bar main:hover {
     font-size: larger;
+}
+
+.loggedOut-nav-bar a:hover {
+    font-size: medium;
 }
 
 .loggedOut-nav-bar::after {
@@ -74,10 +78,12 @@
 
 .search-container input {
     display: inline-block;
+    height: 20px;
 }
 
 .search-container button {
     color: orange;
+    height: 26px;
 }
 
 .github {

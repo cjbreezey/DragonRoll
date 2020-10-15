@@ -14,11 +14,14 @@ class AnimeIndex extends React.Component {
         const { animes } = this.props;
         // debugger
         return (
-            <ul>
-                <li>
+            <div className='anime-container'>
+                <div className='header-container'>
+                    <header className="anime-header">Anime</header>
+                </div>
+                <ul className="anime-ul">
                     {animes.map(anime => <AnimeIndexItem key={anime.id} anime={anime} /> )}
-                </li>
-            </ul>
+                </ul>
+            </div>
         )
     }
 

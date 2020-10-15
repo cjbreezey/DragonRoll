@@ -27,3 +27,39 @@ Anime9 = Anime.create(title: 'Tower of God', description: 'test 9', genre: 'dram
 Anime10 = Anime.create(title: 'The Rising of the Shield Hero', description: 'test 10', genre: 'action')
 Anime11 = Anime.create(title: 'Digimon Adventures', description: 'test 11', genre: 'adventure')
 Anime12 = Anime.create(title: 'Dr. Stone', description: 'test 12', genre: 'sci-fi')
+
+file1 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/GOHS.jpg')
+Anime1.photo.attach(io: file1, filename: "img_#{Anime1.id}.jpg")
+
+file2 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto.jpg')
+Anime2.photo.attach(io: file2, filename: "img_#{Anime2.id}.jpg")
+
+file3 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/HxH.jpg')
+Anime3.photo.attach(io: file3, filename: "img_#{Anime3.id}.jpg")
+
+file4 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/black_clover.jpg')
+Anime4.photo.attach(io: file4, filename: "img_#{Anime4.id}.jpg")
+
+file5 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/SAO.jpg')
+Anime5.photo.attach(io: file5, filename: "img_#{Anime5.id}.jpg")
+
+file6 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/onePiece.jpg')
+Anime6.photo.attach(io: file6, filename: "img_#{Anime6.id}.jpg")
+
+file7 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fireForce.jpg')
+Anime7.photo.attach(io: file7, filename: "img_#{Anime7.id}.jpg")
+
+file8 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kuroko.jpg')
+Anime8.photo.attach(io: file8, filename: "img_#{Anime8.id}.jpg")
+
+file9 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/towerOfGod.jpg')
+Anime9.photo.attach(io: file9, filename: "img_#{Anime9.id}.jpg")
+
+file10 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/shieldHero.jpg')
+Anime10.photo.attach(io: file10, filename: "img_#{Anime10.id}.jpg")
+
+file11 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon.jpg')
+Anime11.photo.attach(io: file11, filename: "img_#{Anime11.id}.jpg")
+
+file12 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drStone.jpg')
+Anime12.photo.attach(io: file12, filename: "img_#{Anime12.id}.jpg")

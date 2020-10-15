@@ -15,31 +15,31 @@ export default ({ user, logout }) => {
             <nav className='navbar-links'>
                 <ul>
                     <li>
-                        <a>
+                        <main>
                             <NavLink to="/">
                             <i className="fas fa-tv">
                                 <div className='nav-text'><span>Animes</span></div>
                             </i>
                             </NavLink>
-                        </a>
+                        </main>
                     </li>
                     <li>
-                        <a>
+                        <main>
                             <NavLink to="/login">
                             <i className="far fa-bookmark">
                                 <div className='nav-text'><span>Bookmarks</span></div>
                             </i>
                             </NavLink>
-                        </a>
+                        </main>
                     </li>
                     <li>
-                        <a>
+                        <main>
                             <NavLink to="/login">
                             <i className="far fa-user-circle">
                                 <div className='nav-text'><span>Log in</span></div>
                             </i>
                             </NavLink>
-                        </a>
+                        </main>
                     </li>
                         <li className='search-container'>
                             <form>
@@ -79,31 +79,31 @@ export default ({ user, logout }) => {
             <nav className='navbar-links'>
                 <ul>
                     <li>
-                        <a>
+                        <main>
                             <NavLink to="/">
                             <i className="fas fa-tv">
                                 <div className='nav-text'><span>Animes</span></div>
                             </i>
                             </NavLink>
-                        </a>
+                        </main>
                     </li>
                     <li>
-                        <a>
+                        <main>
                             <NavLink to="/login">
                             <i className="far fa-bookmark">
                                 <div className='nav-text'><span>Bookmarks</span></div>
                             </i>
                             </NavLink>
-                        </a>
+                        </main>
                     </li>
                     <li>
-                        <a>
+                        <main>
                             <NavLink to="/login">
                             <i className="far fa-user-circle" onClick={logout}>
                                 <div className='nav-text'><span>Log Out</span></div>
                             </i>
                             </NavLink>
-                        </a>
+                        </main>
                     </li>
                     <li className='search-container'>
                             <form>
@@ -131,7 +131,7 @@ export default ({ user, logout }) => {
         </div>
     )
     
-    return user ? loggedInNav() :loggedOutNav()
+    return user ? loggedInNav() : loggedOutNav()
 
 }
 
