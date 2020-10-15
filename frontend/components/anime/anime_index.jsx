@@ -12,7 +12,7 @@ class AnimeIndex extends React.Component {
 
     render() {
         const { animes } = this.props;
-        debugger
+        // debugger
         return (
             <ul>
                 <li>

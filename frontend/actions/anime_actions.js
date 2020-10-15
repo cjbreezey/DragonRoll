@@ -4,7 +4,7 @@ export const RECEIVE_ANIMES = "RECEIVE_ANIMES"
 export const RECEIVE_ANIME = "RECEIVE_ANIME"
 
 export const receiveAnimes = (animes) => {
-    debugger
+    // debugger
     return ({
         type: RECEIVE_ANIMES,
         animes

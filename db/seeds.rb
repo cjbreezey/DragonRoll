@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-# Anime.destroy_all
+Anime.destroy_all
 
 # creating Users
 user1 = User.create(username: 'tickle_me_elmo', password: 'password')
@@ -16,5 +16,14 @@ user3 = User.create(username: 'cheetah_boys', password: 'password')
 
 # creating Animes
 Anime1 = Anime.create(title: 'God of High School', description: 'high schoolers with the power of gods', genre: 'comedy')
-Anime2 = Anime.create(title: 'Attack on Titan', description: 'ugly ex humans attack humans', genre: 'action')
-Anime3 = Anime.create(title: 'Darker than Black', description: 'hell and heaven gates', genre: 'action')
+Anime2 = Anime.create(title: 'Naruto', description: 'test description 2', genre: 'action')
+Anime3 = Anime.create(title: 'Hunter x Hunter', description: 'test 3', genre: 'action')
+Anime4 = Anime.create(title: 'Black Clover', description: 'test 4', genre: 'action')
+Anime5 = Anime.create(title: 'Sword Art Online', description: 'test 5', genre: 'action')
+Anime6 = Anime.create(title: 'One Piece', description: 'test 6', genre: 'comedy')
+Anime7 = Anime.create(title: 'Fire Force', description: 'test 7', genre: 'action')
+Anime8 = Anime.create(title: "Kuroko's Basketball", description: 'test 8', genre: 'sports')
+Anime9 = Anime.create(title: 'Tower of God', description: 'test 9', genre: 'drama')
+Anime10 = Anime.create(title: 'The Rising of the Shield Hero', description: 'test 10', genre: 'action')
+Anime11 = Anime.create(title: 'Digimon Adventures', description: 'test 11', genre: 'adventure')
+Anime12 = Anime.create(title: 'Dr. Stone', description: 'test 12', genre: 'sci-fi')
