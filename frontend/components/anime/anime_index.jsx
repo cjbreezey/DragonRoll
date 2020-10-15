@@ -1,5 +1,5 @@
 import React from 'react'
-import AnimeIndexContainer from './anime_index_container'
+import AnimeIndexItem from './anime_index_item';
 
 class AnimeIndex extends React.Component {
     constructor(props) {
@@ -7,7 +7,21 @@ class AnimeIndex extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchAllAnimes()
+        this.props.fetchAnimes()
+    }
+
+    render() {
+        const { animes } = this.props;
+        debugger
+        return (
+            <ul>
+                <li>
+                    {animes.map(anime => <AnimeIndexItem key={anime.id} anime={anime} /> )}
+                </li>
+            </ul>
+        )
     }
 
 }
+
+export default AnimeIndex
