@@ -35,8 +35,48 @@
     margin-right: 10px;
 }
 
+.anime-img {
+    position: relative;
+}
+
 .anime-li img {
     padding-top: 3px;
+    display: block;
+}
+
+.hidden-description {
+    display: none;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.anime-description:hover + .hidden-description {
+    display: block;
+    position: absolute;
+    right: -105%;
+    left: 102%;
+    top: 5%;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    opacity: .85;
+    border-radius: .5rem;
+}
+
+.span-title {
+    font-size: 14px;
+    font-weight: 400;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.span-description {
+    font-size: 12px;
+    font-weight: 200;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .anime-ul {

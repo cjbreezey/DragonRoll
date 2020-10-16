@@ -15,12 +15,12 @@ export default ({ user, logout }) => {
                 <nav className='social-links'>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/christopher-j-lee/">
+                            <a href="https://www.linkedin.com/in/christopher-j-lee/" target="_blank">
                                 <img className='linkedin' src={linkedin} />
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/cjbreezey/DragonRoll/">
+                            <a href="https://github.com/cjbreezey/DragonRoll/" target="_blank">
                                 <img className='github' src={github} />
                             </a>
                         </li>
@@ -76,12 +76,12 @@ export default ({ user, logout }) => {
                 <nav className='social-links'>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/christopher-j-lee/">
+                            <a href="https://www.linkedin.com/in/christopher-j-lee/" target="_blank">
                                 <img className='linkedin' src={linkedin} />
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/cjbreezey/DragonRoll/">
+                            <a href="https://github.com/cjbreezey/DragonRoll/" target="_blank">
                                 <img className='github' src={github} />
                             </a>
                         </li>
