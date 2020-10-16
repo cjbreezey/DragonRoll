@@ -19,8 +19,8 @@ const App = (props) => {
             <Switch>
                 <AuthRoute path="/login" component={Splash} />
                 <AuthRoute path="/signup" component={Splash} />
-                <Route path='/' component={AnimeIndexContainer} />
-                <Redirect to='/'></Redirect>
+                <Route exact path='/' component={AnimeIndexContainer} />
+                <Redirect to='/'>/</Redirect>
             </Switch>
         </main>
     )

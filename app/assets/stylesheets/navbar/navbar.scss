@@ -1,7 +1,7 @@
 .logo {
     // background-color: orange;
     padding-left: 20px;
-    float: left;
+    // float: left;
     height: 40px;
 }
 
@@ -9,82 +9,82 @@
     // background-color: orange;
     font-size: 45px;
     color: orange;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 550;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
     width: 50px;
 }
 
-.navbar-links {
-    float: right;
-    padding-right: 20px;
-    display: flex;
-    text-align: center;
-}
+// .navbar-links {
+//     float: right;
+//     padding-right: 20px;
+//     display: flex;
+//     text-align: center;
+// }
 
-.navbar-links span {
-    font-size: 16px;
-}
+// .navbar-links span {
+//     font-size: 16px;
+// }
 
-.nav-text span {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: none;
-}
+// .nav-text span {
+//     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+//     font-weight: none;
+// }
 
-.social-links {
-    float: right;
-    padding-right: 175px;
-}
+// .social-links {
+//     float: right;
+//     padding-right: 175px;
+// }
 
-.social-links li {
-    display: inline-block;
-}
+// .social-links li {
+//     display: inline-block;
+// }
 
 
-.loggedOut-nav-bar {
-    width: 100vw;
-    margin: 0 auto;
-    background-color: lightgray;
-    padding-top: 15px;
-}
+// .loggedOut-nav-bar {
+//     width: 100vw;
+//     margin: 0 auto;
+//     background-color: lightgray;
+//     padding-top: 15px;
+// }
 
-.loggedOut-nav-bar main:hover {
-    font-size: larger;
-}
+// .loggedOut-nav-bar main:hover {
+//     font-size: larger;
+// }
 
-.loggedOut-nav-bar a:hover {
-    font-size: medium;
-}
+// .loggedOut-nav-bar a:hover {
+//     font-size: larger;
+// }
 
-.loggedOut-nav-bar::after {
-    content: '';
-    display: block;
-    clear: both;
-}
+// .loggedOut-nav-bar::after {
+//     content: '';
+//     display: block;
+//     clear: both;
+// }
 
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+// .navbar-links ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
 
-.navbar-links li {
-    display: inline-block;
-    margin-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+// .navbar-links li {
+//     display: inline-block;
+//     margin-left: 15px;
+//     padding-top: 10px;
+//     padding-bottom: 5px;
 
-    position: relative;
-}
+//     position: relative;
+// }
 
-.search-container input {
-    display: inline-block;
-    height: 20px;
-}
+// .search-container input {
+//     display: inline-block;
+//     height: 20px;
+// }
 
-.search-container button {
-    color: orange;
-    height: 26px;
-}
+// .search-container button {
+//     color: orange;
+//     height: 26px;
+// }
 
 .github {
     height: 45px;
@@ -99,8 +99,79 @@
     vertical-align: middle;
 }
 
-.fas, .far {
+.far {
     color: orange;
     text-decoration: none;
-    font-weight: 500px;
+    font-size: 22px;
+    padding-bottom: 3px;
+}
+
+.fas {
+    color: orange;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 5px;
+    // font-weight: 500px;
+}
+
+.nav-text span {
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-container {
+    margin-top: 8px;
+}
+
+.nav {
+    background-color: rgb(233, 233, 233);
+    overflow: hidden;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links {
+    width: 400px;
+    text-align: center;
+}
+
+.navbar-links ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.social-links ul {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search-container input {
+    border-radius: .35rem;
+    border: 1px solid orange;
+    height: 25px;
+    width: 150px;
+    padding-right: 10px;
+    background: transparent;
+}
+
+.search-container input::placeholder {
+    color: orange;
+}
+
+.search-container button {
+    height: 25px;
+    color: orange;
+    margin-left: -30px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
 }
