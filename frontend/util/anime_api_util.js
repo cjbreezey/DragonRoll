@@ -6,6 +6,7 @@ export const fetchAnimes = () => {
 }
 
 export const fetchAnime = (animeId) => {
+    // debugger
     return $.ajax({
         url: `/api/animes/${animeId}`,
         method: 'GET'

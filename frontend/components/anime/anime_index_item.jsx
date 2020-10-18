@@ -19,41 +19,22 @@ class AnimeIndexItem extends React.Component {
         return (
             <div>
                 <h3 className='anime-title'>
-                    {/* {icon} */}
                     <span className='anime-title-text'>{anime.title}</span>
                 </h3>
                 <li className='anime-li'>
-                    <a href={`/anime/${anime.id}`}>
+                    <Link to={`/animes/${anime.id}`}>
                         <div className='anime-img'>
                             <img src={anime.photo_url} className="anime-description"/>
                             <div className='hidden-description'>
                                 <p className="span-title">{anime.title}</p>
-                                {/* <br /> */}
                                 <p className='span-description'>{description}</p>
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 </li>
             </div>
         )
     }
 }
-
-// const AnimeIndexItem = ({ anime }) => (
-    
-    // <div>
-    //     <h3 className='anime-title'>
-    //         {icon}
-    //         <span className='anime-title-text'>{anime.title}</span>
-    //     </h3>
-    //     <li className='anime-li'>
-    //         <a href={`/anime/${anime.id}`}>
-    //             <div>
-    //                 <img src={anime.photo_url}/>
-    //             </div>
-    //         </a>
-    //     </li>
-    // </div>
-// )
 
 export default AnimeIndexItem

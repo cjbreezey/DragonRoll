@@ -7,6 +7,7 @@ const animeReducer = (state = {}, action) => {
         case RECEIVE_ANIMES:
             return action.animes
         case RECEIVE_ANIME:
+            // debugger
             nextState[action.anime.id] = action.anime
             return nextState
         default:

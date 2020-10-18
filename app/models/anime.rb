@@ -13,6 +13,7 @@ class Anime < ApplicationRecord
     validates :title, :description, :genre, presence: true
 
     has_one_attached :photo
+    has_one_attached :large_photo
 
     # has_many :tags
     # has_many :videos

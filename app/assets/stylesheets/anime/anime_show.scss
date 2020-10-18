@@ -1,0 +1,46 @@
+.showAnime-container {
+    width: 100vw;
+}
+
+.showAnime-header-container {
+    width: 925px;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    // background-color: blue;
+}
+
+.showAnime-title {
+    border-bottom: 2px solid gray;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.showAnime-title-text {
+    font-size: 1.75em;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.showAnime-description {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.showAnime-content {
+    width: 35%;
+    // text-align: center;
+}
+
+.showAnime-text {
+    font-size: 18px;
+}
+
+.showAnime-content img {
+    height: 450px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

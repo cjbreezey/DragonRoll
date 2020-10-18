@@ -72,7 +72,7 @@ class SessionForm extends React.Component {
                         clearInterval(inputPassword);
                         this.props.demoLogin(demo).then(
                             () => {
-                                this.props.history.push("/home")
+                                this.props.history.push("/")
                             })
                     }
                 }, speed);

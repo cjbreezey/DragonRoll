@@ -8,6 +8,8 @@
 
 User.destroy_all
 Anime.destroy_all
+ActiveRecord::Base.connection.reset_pk_sequence!('users')
+ActiveRecord::Base.connection.reset_pk_sequence!('animes')
 
 # creating Users
 user1 = User.create(username: 'tickle_me_elmo', password: 'password')
@@ -28,38 +30,76 @@ Anime12 = Anime.create(title: 'Dr. Stone', description: "Several thousand years 
 Anime11 = Anime.create(title: 'Digimon Adventures', description: "It's the year 2020. The Network has become something humans can no longer do without in their daily lives. But what humans don't know is that on the other side of the Network is the Digital World, a realm of light and darkness. Nor are they aware of the Digimon who live there. Fifth grader Taichi Yagami]s mother and little sister Hikari went to Shibuya, and now they're aboard a runaway train. Taichi hurries to Shibuya to save his mother and sister, but the instant he heads toward the station platform... a strange phenomenon befalls the DigiDestined, and Taichi goes to the Digital World!", genre: 'adventure')
 Anime10 = Anime.create(title: 'The Rising of the Shield Hero', description: "Iwatani Naofumi, a run-of-the-mill otaku, finds a book in the library that summons him to another world. He is tasked with joining the sword, spear, and bow as one of the Four Cardinal Heroes and fighting the Waves of Catastrophe as the Shield Hero. Excited by the prospect of a grand adventure, Naofumi sets off with his party. However, merely a few days later, he is betrayed and loses all his money, dignity, and respect. Unable to trust anyone anymore, he employs a slave named Raphtalia and takes on the Waves and the world. But will he really find a way to overturn this desperate situation?", genre: 'action')
 
+
+# attaching photos to Animes
 file1 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/GOHS.jpg')
 Anime1.photo.attach(io: file1, filename: "img_#{Anime1.id}.jpg")
+
+large_file1 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/GOHS_large.jpg')
+Anime1.large_photo.attach(io: large_file1, filename: "img_GOHS_large.jpg")
 
 file2 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto.jpg')
 Anime2.photo.attach(io: file2, filename: "img_#{Anime2.id}.jpg")
 
+large_file2 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_large.jpg')
+Anime2.large_photo.attach(io: large_file2, filename: "img_naruto_large.jpg")
+
 file3 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/HxH.jpg')
 Anime3.photo.attach(io: file3, filename: "img_#{Anime3.id}.jpg")
+
+large_file3 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/HxH_large.jpg')
+Anime3.large_photo.attach(io: large_file3, filename: "img_HxH_large.jpg")
 
 file4 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/black_clover.jpg')
 Anime4.photo.attach(io: file4, filename: "img_#{Anime4.id}.jpg")
 
+large_file4 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/black_clover_large.jpg')
+Anime4.large_photo.attach(io: large_file4, filename: "img_black_clover_jpg")
+
 file5 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/SAO.jpg')
 Anime5.photo.attach(io: file5, filename: "img_#{Anime5.id}.jpg")
+
+large_file5 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/SAO_large.jpg')
+Anime5.large_photo.attach(io: large_file5, filename: "img_SAO_large.jpg")
 
 file6 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/onePiece.jpg')
 Anime6.photo.attach(io: file6, filename: "img_#{Anime6.id}.jpg")
 
+large_file6 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/onePiece_large.jpg')
+Anime6.large_photo.attach(io: large_file6, filename: "img_onePiece_large.jpg")
+
 file7 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fireForce.jpg')
 Anime7.photo.attach(io: file7, filename: "img_#{Anime7.id}.jpg")
+
+large_file7 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fireForce_large.jpg')
+Anime7.large_photo.attach(io: large_file7, filename: "img_fireForce_large.jpg")
 
 file8 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kuroko.jpg')
 Anime8.photo.attach(io: file8, filename: "img_#{Anime8.id}.jpg")
 
+large_file8 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kuroko_large.jpg')
+Anime8.large_photo.attach(io: large_file8, filename: "img_kuroko_large.jpg")
+
 file9 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/towerOfGod.jpg')
 Anime9.photo.attach(io: file9, filename: "img_#{Anime9.id}.jpg")
+
+large_file9 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/towerOfGod_large.jpg')
+Anime9.large_photo.attach(io: large_file9, filename: "img_towerOfGod_large.jpg")
 
 file10 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/shieldHero.jpg')
 Anime10.photo.attach(io: file10, filename: "img_#{Anime10.id}.jpg")
 
+large_file10 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/shieldHero_large.jpg')
+Anime10.large_photo.attach(io: large_file10, filename: "img_shieldHero_large.jpg")
+
 file11 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon.jpg')
 Anime11.photo.attach(io: file11, filename: "img_#{Anime11.id}.jpg")
 
+large_file11 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon_large.jpg')
+Anime11.large_photo.attach(io: large_file11, filename: "img_digimon_large.jpg")
+
 file12 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drStone.jpg')
 Anime12.photo.attach(io: file12, filename: "img_#{Anime12.id}.jpg")
+
+large_file12 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drStone_large.jpg')
+Anime12.large_photo.attach(io: large_file12, filename: "img_drStone_large.jpg")
