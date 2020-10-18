@@ -1,6 +1,6 @@
 import React from 'react'
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
-import { AuthRoute } from '../util/route_util'
+import { AuthRoute, ProtectedRoute } from '../util/route_util'
 import Splash from './splash/splash'
 import NavbarContainer from './navbar/navbar_container'
 import AnimeIndexContainer from './anime/anime_index_container'
@@ -15,9 +15,9 @@ const App = (props) => {
         <main>
             {navbar} 
             <Switch>
+                <ProtectedRoute path="/animes/:animeId" component={AnimeShowContainer} />
                 <AuthRoute path="/login" component={Splash} />
                 <AuthRoute path="/signup" component={Splash} />
-                <AuthRoute path="/animes/:animeId" component={AnimeShowContainer} />
                 <Route exact path='/' component={AnimeIndexContainer} />
                 <Redirect to='/'>/</Redirect>
             </Switch>
