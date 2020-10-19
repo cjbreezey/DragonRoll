@@ -10,10 +10,10 @@ export const receiveAnimes = (animes) => {
     })
 }
 
-export const receiveAnime = (anime) => {
+export const receiveAnime = (payload) => {
     return ({
         type: RECEIVE_ANIME,
-        anime
+        payload
     })
 }
 
@@ -26,6 +26,7 @@ export const fetchAnimes = (animes) => (dispatch) => (
 export const fetchAnime = (animeId) => (dispatch) => {
     // debugger
     return AnimeAPI.fetchAnime(animeId).then((payload) => {
+        debugger
         dispatch(receiveAnime(payload))
     })
 }

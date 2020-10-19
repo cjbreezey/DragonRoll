@@ -7,8 +7,8 @@ const animeReducer = (state = {}, action) => {
         case RECEIVE_ANIMES:
             return action.animes
         case RECEIVE_ANIME:
-            nextState[action.anime.id] = action.anime
-            return nextState
+            debugger
+            return action.payload.animes
         default:
             return state;
     }
