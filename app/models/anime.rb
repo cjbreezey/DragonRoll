@@ -15,7 +15,9 @@ class Anime < ApplicationRecord
     has_one_attached :photo
     has_one_attached :large_photo
 
-    has_many :episodes
+    has_many :episodes,
+        foreign_key: :anime_id
+        class_name: :Episode
     # has_many :tags
     # belongs_to :bookmark
 
