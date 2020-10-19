@@ -7,6 +7,7 @@ const mapStateToProps = (state, ownProps) => {
     // debugger
     return {
     anime: state.entities.animes[ownProps.match.params.animeId]
+    // episodes: Object.values(state.entities.animes.episodes)
     }
 }
 

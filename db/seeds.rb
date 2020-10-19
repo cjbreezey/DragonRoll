@@ -8,10 +8,10 @@
 
 User.destroy_all
 Anime.destroy_all
-# Video.destroy_all
+Episode.destroy_all
 ActiveRecord::Base.connection.reset_pk_sequence!('users')
 ActiveRecord::Base.connection.reset_pk_sequence!('animes')
-# ActiveRecord::Base.connection.reset_pk_sequence!('videos')
+ActiveRecord::Base.connection.reset_pk_sequence!('episodes')
 
 # creating Users
 user1 = User.create!(username: 'tickle_me_elmo', password: 'password')
@@ -163,22 +163,22 @@ large_file20 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/promised
 Anime20.large_photo.attach(io: large_file20, filename: "img_promisedNeverland_large.jpg")
 
 
-# Creating Episodes/Videos
+# Creating Episodes
 
-# gohs1 = Video.create!(anime_id: 1, title: 'set up/stand up', genre: 'comedy')
-# gohs2 = Video.create!(anime_id: 1, title: 'renewal/soul', genre: 'comedy')
-# gohs3 = Video.create!(anime_id: 1, title: 'wisdom/kingdom', genre: 'comedy')
-# gohs4 = Video.create!(anime_id: 1, title: 'marriage/bonds', genre: 'comedy')
-# gohs5 = Video.create!(anime_id: 1, title: 'ronde/hound', genre: 'comedy')
-# gohs6 = Video.create!(anime_id: 1, title: 'fear/SIX', genre: 'comedy')
-# naruto1 = Video.create!(anime_id: 2, title: 'Enter: Naruto Uzumaki!', genre: 'comedy')
-# naruto2 = Video.create!(anime_id: 2, title: 'My Name is...', genre: 'action')
-# naruto3 = Video.create!(anime_id: 2, title: 'Sasuke and Sakura', genre: 'action')
-# naruto4 = Video.create!(anime_id: 2, title: 'Pass or Fail: Survival Test', genre: 'action')
-# naruto5 = Video.create!(anime_id: 2, title: "You Failed! Kakashi's Final Decision", genre: 'action')
-# hxh1 = Video.create!(anime_id: 3, title: "Departure x And x Friends", genre: 'action')
-# hxh2 = Video.create!(anime_id: 3, title: "Test x Of x Tests", genre: 'action')
-# hxh3 = Video.create!(anime_id: 3, title: "Rivals x In x Survival", genre: 'action')
-# hxh4 = Video.create!(anime_id: 3, title: "Hope x And x Ambition", genre: 'action')
-# hxh5 = Video.create!(anime_id: 3, title: "Hisoka x Is So x Sneaky", genre: 'action')
-# hxh6 = Video.create!(anime_id: 3, title: "A x Surprising x Challenge", genre: 'action')
+gohs1 = Episode.create!(anime_id: 1, title: 'set up/stand up', genre: 'comedy')
+gohs2 = Episode.create!(anime_id: 1, title: 'renewal/soul', genre: 'comedy')
+gohs3 = Episode.create!(anime_id: 1, title: 'wisdom/kingdom', genre: 'comedy')
+gohs4 = Episode.create!(anime_id: 1, title: 'marriage/bonds', genre: 'comedy')
+gohs5 = Episode.create!(anime_id: 1, title: 'ronde/hound', genre: 'comedy')
+gohs6 = Episode.create!(anime_id: 1, title: 'fear/SIX', genre: 'comedy')
+naruto1 = Episode.create!(anime_id: 2, title: 'Enter: Naruto Uzumaki!', genre: 'comedy')
+naruto2 = Episode.create!(anime_id: 2, title: 'My Name is...', genre: 'action')
+naruto3 = Episode.create!(anime_id: 2, title: 'Sasuke and Sakura', genre: 'action')
+naruto4 = Episode.create!(anime_id: 2, title: 'Pass or Fail: Survival Test', genre: 'action')
+naruto5 = Episode.create!(anime_id: 2, title: "You Failed! Kakashi's Final Decision", genre: 'action')
+hxh1 = Episode.create!(anime_id: 3, title: "Departure x And x Friends", genre: 'action')
+hxh2 = Episode.create!(anime_id: 3, title: "Test x Of x Tests", genre: 'action')
+hxh3 = Episode.create!(anime_id: 3, title: "Rivals x In x Survival", genre: 'action')
+hxh4 = Episode.create!(anime_id: 3, title: "Hope x And x Ambition", genre: 'action')
+hxh5 = Episode.create!(anime_id: 3, title: "Hisoka x Is So x Sneaky", genre: 'action')
+hxh6 = Episode.create!(anime_id: 3, title: "A x Surprising x Challenge", genre: 'action')

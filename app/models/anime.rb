@@ -7,7 +7,7 @@
 #  description :text             not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  genre       :string           not null
+#  genre       :string
 #
 class Anime < ApplicationRecord
     validates :title, :description, :genre, presence: true
@@ -15,8 +15,8 @@ class Anime < ApplicationRecord
     has_one_attached :photo
     has_one_attached :large_photo
 
+    has_many :episodes
     # has_many :tags
-    # has_many :videos
     # belongs_to :bookmark
 
 end

@@ -7,7 +7,7 @@
 #  description :text             not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  genre       :string           not null
+#  genre       :string
 #
 require 'test_helper'
 

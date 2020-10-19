@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_14_181415) do
+ActiveRecord::Schema.define(version: 2020_10_19_015812) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2020_10_14_181415) do
     t.text "description", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "genre", null: false
+    t.string "genre"
     t.index ["title"], name: "index_animes_on_title", unique: true
   end
 
@@ -52,6 +52,17 @@ ActiveRecord::Schema.define(version: 2020_10_14_181415) do
     t.datetime "updated_at", null: false
     t.index ["anime_id"], name: "index_bookmarks_on_anime_id"
     t.index ["user_id"], name: "index_bookmarks_on_user_id", unique: true
+  end
+
+  create_table "episodes", force: :cascade do |t|
+    t.integer "anime_id", null: false
+    t.string "title", null: false
+    t.string "genre", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["anime_id"], name: "index_episodes_on_anime_id"
+    t.index ["genre"], name: "index_episodes_on_genre"
+    t.index ["title"], name: "index_episodes_on_title", unique: true
   end
 
   create_table "tags", force: :cascade do |t|
@@ -69,17 +80,6 @@ ActiveRecord::Schema.define(version: 2020_10_14_181415) do
     t.datetime "updated_at", null: false
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
-  end
-
-  create_table "videos", force: :cascade do |t|
-    t.integer "anime_id", null: false
-    t.string "title", null: false
-    t.string "genre", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["anime_id"], name: "index_videos_on_anime_id"
-    t.index ["genre"], name: "index_videos_on_genre"
-    t.index ["title"], name: "index_videos_on_title", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

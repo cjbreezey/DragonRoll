@@ -8,7 +8,7 @@ class AnimeShow extends React.Component {
     }
 
     componentDidMount() {
-        // debugger
+    // debugger
         this.props.fetchAnime(this.props.match.params.animeId).then(() => {
             this.setState(this.props.anime)
         })
@@ -24,6 +24,7 @@ class AnimeShow extends React.Component {
                     <div className='showAnime-header-container'>
                         <div className='showAnime-title'>
                             <header className='showAnime-title-text'>{showAnime.title}</header>
+                            {/* <header>{this.props.episodes.title}</header> */}
                         </div>
                         <div className='showAnime-description'>
                             <div className='showAnime-content'>
