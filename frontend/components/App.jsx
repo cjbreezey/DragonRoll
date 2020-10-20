@@ -5,6 +5,7 @@ import Splash from './splash/splash'
 import NavbarContainer from './navbar/navbar_container'
 import AnimeIndexContainer from './anime/anime_index_container'
 import AnimeShowContainer from './anime/anime_show_container'
+import EpisodeShowContainer from './anime/episode_show_container'
 
 const App = (props) => {
     let navbar = <NavbarContainer />
@@ -16,6 +17,7 @@ const App = (props) => {
             {navbar} 
             <Switch>
                 <ProtectedRoute path="/animes/:animeId" component={AnimeShowContainer} />
+                <ProtectedRoute path="/episodes/:episodeId" component={EpisodeShowContainer} />
                 <AuthRoute path="/login" component={Splash} />
                 <AuthRoute path="/signup" component={Splash} />
                 <Route exact path='/' component={AnimeIndexContainer} />

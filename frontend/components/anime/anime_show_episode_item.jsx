@@ -16,7 +16,7 @@ class AnimeShowEpisodeItem extends React.Component {
         }
         return (
             <div className='episode-li-container'>
-                <Link to={`/videos/${episode.id}`}>
+                <Link to={`/episodes/${episode.id}`}>
                     <li className='episode-li'>
                         <img src={episode.photo_url} />
                         <span>Episode: {episode.episode_num}</span>

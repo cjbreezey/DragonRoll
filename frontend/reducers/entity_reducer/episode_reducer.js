@@ -6,10 +6,10 @@ const episodeReducer = (state = {}, action) => {
     let nextState = Object.assign({}, state)
     switch(action.type) {
         case RECEIVE_ANIME:
-            // debugger
             return action.payload.episodes
-        // case RECEIVE_EPISODE:
-            // nextState[action.]
+        case RECEIVE_EPISODE:
+            nextState[action.payload.episodes.id] = action.payload.episodes
+            return nextState
         default:
             return state;
     }

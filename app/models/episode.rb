@@ -14,7 +14,7 @@ class Episode < ApplicationRecord
     belongs_to :anime,
         foreign_key: :anime_id,
         class_name: :Anime
-    # has_one_attached :video
+
     has_one_attached :thumbnail
 
 end

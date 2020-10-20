@@ -2,13 +2,13 @@ import * as EpisodeUtils from '../util/episode_api_util'
 
 export const RECEIVE_EPISODE = "RECEIVE_EPISODE"
 
-const receiveEpisode = episode => ({
+const receiveEpisode = payload => ({
     type: RECEIVE_EPISODE,
-    episode
+    payload
 })
 
 export const fetchEpisode = episodeId => dispatch => (
-    EpisodeUtils.fetchEpisode(episodeId).then((episode) => {
-        dispatch(receiveEpisode(episode))
+    EpisodeUtils.fetchEpisode(episodeId).then((payload) => {
+        dispatch(receiveEpisode(payload))
     })
 )

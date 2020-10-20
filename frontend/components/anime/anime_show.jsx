@@ -9,7 +9,6 @@ class AnimeShow extends React.Component {
     }
 
     componentDidMount() {
-    // debugger
         this.props.fetchAnime(this.props.match.params.animeId).then(() => {
             this.setState(this.props.anime)
         })
@@ -19,7 +18,6 @@ class AnimeShow extends React.Component {
         const { episodes } = this.props;
         let showAnime;
         this.props.anime ? showAnime = this.props.anime : showAnime = null
-        // debugger
         return (
             !showAnime ? <div></div> : (
                 <div className='showAnime-container'>
@@ -42,14 +40,6 @@ class AnimeShow extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className='showAnime-description'> */}
-                            {/* <div className='showAnime-content'>
-                                <img src={showAnime.photo_url} />
-                                <p>About the Show</p>
-                                <div className='showAnime-text'>{showAnime.description}</div>
-                                <span>Genre: {showAnime.genre}</span>
-                            </div> */}
-                        {/* </div> */}
                     </div>
                 </div>
 
