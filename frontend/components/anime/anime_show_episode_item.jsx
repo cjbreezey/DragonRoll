@@ -9,8 +9,8 @@ class AnimeShowEpisodeItem extends React.Component {
     render() {
         const { episode } = this.props
         let title;
-        if (this.props.episode.title.length > 20) {
-            title = this.props.episode.title.slice(0, 20) + "...";
+        if (this.props.episode.title.length > 15) {
+            title = this.props.episode.title.slice(0, 15) + "...";
         } else {
             title = this.props.episode.title
         }
