@@ -270,8 +270,67 @@ naruto12.thumbnail.attach(io: naruto_thumbnail12, filename: "img_naruto_thumbnai
 
 
 hxh1 = Episode.create!(anime_id: 3, title: "Departure x And x Friends", genre: 'action', episode_num: 1)
-hxh2 = Episode.create!(anime_id: 3, title: "Test x Of x Tests", genre: 'action', episode_num: 1)
-hxh3 = Episode.create!(anime_id: 3, title: "Rivals x In x Survival", genre: 'action', episode_num: 2)
-hxh4 = Episode.create!(anime_id: 3, title: "Hope x And x Ambition", genre: 'action', episode_num: 3)
-hxh5 = Episode.create!(anime_id: 3, title: "Hisoka x Is So x Sneaky", genre: 'action', episode_num: 4)
-hxh6 = Episode.create!(anime_id: 3, title: "A x Surprising x Challenge", genre: 'action', episode_num: 5)
+hxh2 = Episode.create!(anime_id: 3, title: "Test x Of x Tests", genre: 'action', episode_num: 2)
+hxh3 = Episode.create!(anime_id: 3, title: "Rivals x In x Survival", genre: 'action', episode_num: 3)
+hxh4 = Episode.create!(anime_id: 3, title: "Hope x And x Ambition", genre: 'action', episode_num: 4)
+hxh5 = Episode.create!(anime_id: 3, title: "Hisoka x Is So x Sneaky", genre: 'action', episode_num: 5)
+hxh6 = Episode.create!(anime_id: 3, title: "A x Surprising x Challenge", genre: 'action', episode_num: 6)
+hxh7 = Episode.create!(anime_id: 3, title: "Showdown x On The x Airship", genre: 'action', episode_num: 7)
+hxh8 = Episode.create!(anime_id: 3, title: "Decision x By x Majority?", genre: 'action', episode_num: 8)
+
+hxh1_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail1.jpg")
+hxh1.thumbnail.attach(io: hxh1_thumbnail, filename: "img_hxh_thumbnail1.jpg")
+
+hxh2_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail2.jpg")
+hxh2.thumbnail.attach(io: hxh2_thumbnail, filename: "img_hxh_thumbnail2.jpg")
+
+hxh3_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail3.jpg")
+hxh3.thumbnail.attach(io: hxh3_thumbnail, filename: "img_hxh_thumbnail3.jpg")
+
+hxh4_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail4.jpg")
+hxh4.thumbnail.attach(io: hxh4_thumbnail, filename: "img_hxh_thumbnail4.jpg")
+
+hxh5_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail5.jpg")
+hxh5.thumbnail.attach(io: hxh5_thumbnail, filename: "img_hxh_thumbnail5.jpg")
+
+hxh6_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail6.jpg")
+hxh6.thumbnail.attach(io: hxh6_thumbnail, filename: "img_hxh_thumbnail6.jpg")
+
+hxh7_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail7.jpg")
+hxh7.thumbnail.attach(io: hxh7_thumbnail, filename: "img_hxh_thumbnail7.jpg")
+
+hxh8_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/hxh_thumbnail8.jpg")
+hxh8.thumbnail.attach(io: hxh8_thumbnail, filename: "img_hxh_thumbnail8.jpg")
+
+bc1 = Episode.create!(anime_id: 4, title: "Asta and Yuno", genre: 'action', episode_num: 1)
+bc2 = Episode.create!(anime_id: 4, title: "The Boy's Promise", genre: 'action', episode_num: 2)
+bc3 = Episode.create!(anime_id: 4, title: "To the Royal Capital of the Clover Kingdom!", genre: 'action', episode_num: 3)
+bc4 = Episode.create!(anime_id: 4, title: "The Magic Knights", genre: 'action', episode_num: 4)
+bc5 = Episode.create!(anime_id: 4, title: "The Path to the Wizard King", genre: 'action', episode_num: 5)
+bc6 = Episode.create!(anime_id: 4, title: "The Black Bulls", genre: 'action', episode_num: 6)
+bc7 = Episode.create!(anime_id: 4, title: "The other New Recruit", genre: 'action', episode_num: 7)
+bc8 = Episode.create!(anime_id: 4, title: "Go! Go! First Mission", genre: 'action', episode_num: 8)
+
+bc1_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail1.jpg")
+bc1.thumbnail.attach(io: bc1_thumbnail, filename: "img_bc_thumbnail1.jpg")
+
+bc2_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail2.jpg")
+bc2.thumbnail.attach(io: bc2_thumbnail, filename: "img_bc_thumbnail2.jpg")
+
+bc3_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail3.jpg")
+bc3.thumbnail.attach(io: bc3_thumbnail, filename: "img_bc_thumbnail3.jpg")
+
+bc4_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail4.jpg")
+bc4.thumbnail.attach(io: bc4_thumbnail, filename: "img_bc_thumbnail4.jpg")
+
+bc5_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail5.jpg")
+bc5.thumbnail.attach(io: bc5_thumbnail, filename: "img_bc_thumbnail5.jpg")
+
+bc6_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail6.jpg")
+bc6.thumbnail.attach(io: bc6_thumbnail, filename: "img_bc_thumbnail6.jpg")
+
+bc7_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail7.jpg")
+bc7.thumbnail.attach(io: bc7_thumbnail, filename: "img_bc_thumbnail7.jpg")
+
+bc8_thumbnail = open("https://dragonroll-seed.s3-us-west-1.amazonaws.com/bc_thumbnail8.jpg")
+bc8.thumbnail.attach(io: bc8_thumbnail, filename: "img_bc_thumbnail8.jpg")
