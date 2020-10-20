@@ -70,10 +70,7 @@ class SessionForm extends React.Component {
                         this.setState({ password: temp });
                     } else {
                         clearInterval(inputPassword);
-                        this.props.demoLogin(demo).then(
-                            () => {
-                                this.props.history.push("/")
-                            })
+                        this.props.demoLogin(demo)
                     }
                 }, speed);
             }

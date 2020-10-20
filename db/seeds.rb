@@ -165,20 +165,113 @@ Anime20.large_photo.attach(io: large_file20, filename: "img_promisedNeverland_la
 
 # Creating Episodes
 
-gohs1 = Episode.create!(anime_id: 1, title: 'set up/stand up', genre: 'comedy')
-gohs2 = Episode.create!(anime_id: 1, title: 'renewal/soul', genre: 'comedy')
-gohs3 = Episode.create!(anime_id: 1, title: 'wisdom/kingdom', genre: 'comedy')
-gohs4 = Episode.create!(anime_id: 1, title: 'marriage/bonds', genre: 'comedy')
-gohs5 = Episode.create!(anime_id: 1, title: 'ronde/hound', genre: 'comedy')
-gohs6 = Episode.create!(anime_id: 1, title: 'fear/SIX', genre: 'comedy')
-naruto1 = Episode.create!(anime_id: 2, title: 'Enter: Naruto Uzumaki!', genre: 'comedy')
-naruto2 = Episode.create!(anime_id: 2, title: 'My Name is...', genre: 'action')
-naruto3 = Episode.create!(anime_id: 2, title: 'Sasuke and Sakura', genre: 'action')
-naruto4 = Episode.create!(anime_id: 2, title: 'Pass or Fail: Survival Test', genre: 'action')
-naruto5 = Episode.create!(anime_id: 2, title: "You Failed! Kakashi's Final Decision", genre: 'action')
-hxh1 = Episode.create!(anime_id: 3, title: "Departure x And x Friends", genre: 'action')
-hxh2 = Episode.create!(anime_id: 3, title: "Test x Of x Tests", genre: 'action')
-hxh3 = Episode.create!(anime_id: 3, title: "Rivals x In x Survival", genre: 'action')
-hxh4 = Episode.create!(anime_id: 3, title: "Hope x And x Ambition", genre: 'action')
-hxh5 = Episode.create!(anime_id: 3, title: "Hisoka x Is So x Sneaky", genre: 'action')
-hxh6 = Episode.create!(anime_id: 3, title: "A x Surprising x Challenge", genre: 'action')
+gohs1 = Episode.create!(anime_id: 1, title: 'set up/stand up', genre: 'comedy', episode_num: 1)
+gohs2 = Episode.create!(anime_id: 1, title: 'renewal/soul', genre: 'comedy', episode_num: 2)
+gohs3 = Episode.create!(anime_id: 1, title: 'wisdom/kingdom', genre: 'comedy', episode_num: 3)
+gohs4 = Episode.create!(anime_id: 1, title: 'marriage/bonds', genre: 'comedy', episode_num: 4)
+gohs5 = Episode.create!(anime_id: 1, title: 'ronde/hound', genre: 'comedy', episode_num: 5)
+gohs6 = Episode.create!(anime_id: 1, title: 'fear/SIX', genre: 'comedy', episode_num: 6)
+gohs7 = Episode.create!(anime_id: 1, title: 'anima/force', genre: 'comedy', episode_num: 7)
+gohs8 = Episode.create!(anime_id: 1, title: 'close/friend', genre: 'comedy', episode_num: 8)
+gohs9 = Episode.create!(anime_id: 1, title: 'curse/cornered', genre: 'comedy', episode_num: 9)
+gohs10 = Episode.create!(anime_id: 1, title: 'oath/meaning', genre: 'comedy', episode_num: 10)
+gohs11 = Episode.create!(anime_id: 1, title: 'lay/key', genre: 'comedy', episode_num: 11)
+gohs12 = Episode.create!(anime_id: 1, title: 'FOX/GOD', genre: 'comedy', episode_num: 12)
+gohs13 = Episode.create!(anime_id: 1, title: 'GOD/GOD', genre: 'comedy', episode_num: 13)
+
+thumbnail1 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs1_thumbnail.jpg')
+gohs1.thumbnail.attach(io: thumbnail1, filename: "img_thumbnail1.jpg")
+
+thumbnail2 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs2_thumbnail.jpg')
+gohs2.thumbnail.attach(io: thumbnail2, filename: "img_thumbnail2.jpg")
+
+thumbnail3 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs3_thumbnail.jpg')
+gohs3.thumbnail.attach(io: thumbnail3, filename: "img_thumbnail3.jpg")
+
+thumbnail4 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs4_thumbnail.jpg')
+gohs4.thumbnail.attach(io: thumbnail4, filename: "img_thumbnail4.jpg")
+
+thumbnail5 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs5_thumbnail.jpg')
+gohs5.thumbnail.attach(io: thumbnail5, filename: "img_thumbnail5.jpg")
+
+thumbnail6 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs6_thumbnail.jpg')
+gohs6.thumbnail.attach(io: thumbnail6, filename: "img_thumbnail6.jpg")
+
+thumbnail7 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs7_thumbnail.jpg')
+gohs7.thumbnail.attach(io: thumbnail7, filename: "img_thumbnail7.jpg")
+
+thumbnail8 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs8_thumbnail.jpg')
+gohs8.thumbnail.attach(io: thumbnail8, filename: "img_thumbnail8.jpg")
+
+thumbnail9 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs9_thumbnail.jpg')
+gohs9.thumbnail.attach(io: thumbnail9, filename: "img_thumbnail9.jpg")
+
+thumbnail10 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs10_thumbnail.jpg')
+gohs10.thumbnail.attach(io: thumbnail10, filename: "img_thumbnail10.jpg")
+
+thumbnail11 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs11_thumbnail.jpg')
+gohs11.thumbnail.attach(io: thumbnail11, filename: "img_thumbnail11.jpg")
+
+thumbnail12 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs12_thumbnail.jpg')
+gohs12.thumbnail.attach(io: thumbnail12, filename: "img_thumbnail12.jpg")
+
+thumbnail13 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/gohs13_thumbnail.jpg')
+gohs13.thumbnail.attach(io: thumbnail13, filename: "img_thumbnail13.jpg")
+
+
+naruto1 = Episode.create!(anime_id: 2, title: 'Enter: Naruto Uzumaki!', genre: 'comedy', episode_num: 1)
+naruto2 = Episode.create!(anime_id: 2, title: 'My Name is...', genre: 'action', episode_num: 2)
+naruto3 = Episode.create!(anime_id: 2, title: 'Sasuke and Sakura', genre: 'action', episode_num: 3)
+naruto4 = Episode.create!(anime_id: 2, title: 'Pass or Fail: Survival Test', genre: 'action', episode_num: 4)
+naruto5 = Episode.create!(anime_id: 2, title: "You Failed! Kakashi's Final Decision", genre: 'action', episode_num: 5)
+naruto6 = Episode.create!(anime_id: 2, title: "A Dangerous Mission! Journey to the Land of Waves", genre: 'action', episode_num: 6)
+naruto7 = Episode.create!(anime_id: 2, title: "The Assassin of the Mist!", genre: 'action', episode_num: 7)
+naruto8 = Episode.create!(anime_id: 2, title: "The Oath of Pain", genre: 'action', episode_num: 8)
+naruto9 = Episode.create!(anime_id: 2, title: "Kakashi: Sharingan Warrior!", genre: 'action', episode_num: 9)
+naruto10 = Episode.create!(anime_id: 2, title: "The Forest of Chakra", genre: 'action', episode_num: 10)
+naruto11 = Episode.create!(anime_id: 2, title: "The Land Where a Hero Once Lived", genre: 'action', episode_num: 11)
+naruto12 = Episode.create!(anime_id: 2, title: "Battle on the Bridge! Zabuza Returns!", genre: 'action', episode_num: 12)
+
+naruto1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail1.jpg')
+naruto1.thumbnail.attach(io: naruto1_thumbnail, filename: "img_naruto_thumbnail1.jpg")
+
+naruto_thumbnail2 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail2.jpg')
+naruto2.thumbnail.attach(io: naruto_thumbnail2, filename: "img_naruto_thumbnail2.jpg")
+
+naruto_thumbnail3 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail3.jpg')
+naruto3.thumbnail.attach(io: naruto_thumbnail3, filename: "img_naruto_thumbnail3.jpg")
+
+naruto_thumbnail4 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail4.jpg')
+naruto4.thumbnail.attach(io: naruto_thumbnail4, filename: "img_naruto_thumbnail4.jpg")
+
+naruto_thumbnail5 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail5.jpg')
+naruto5.thumbnail.attach(io: naruto_thumbnail5, filename: "img_naruto_thumbnail5.jpg")
+
+naruto_thumbnail6 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail6.jpg')
+naruto6.thumbnail.attach(io: naruto_thumbnail6, filename: "img_tnaruto_humbnail6.jpg")
+
+naruto_thumbnail7 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail7.jpg')
+naruto7.thumbnail.attach(io: naruto_thumbnail7, filename: "img_naruto_thumbnail7.jpg")
+
+naruto_thumbnail8 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail8.jpg')
+naruto8.thumbnail.attach(io: naruto_thumbnail8, filename: "img_naruto_thumbnail8.jpg")
+
+naruto_thumbnail9 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail9.jpg')
+naruto9.thumbnail.attach(io: naruto_thumbnail9, filename: "img_naruto_thumbnail9.jpg")
+
+naruto_thumbnail10 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail10.jpg')
+naruto10.thumbnail.attach(io: naruto_thumbnail10, filename: "img_naruto_thumbnail10.jpg")
+
+naruto_thumbnail11 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail11.jpg')
+naruto11.thumbnail.attach(io: naruto_thumbnail11, filename: "img_naruto_thumbnail11.jpg")
+
+naruto_thumbnail12 = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/naruto_thumbnail12.jpg')
+naruto12.thumbnail.attach(io: naruto_thumbnail12, filename: "img_naruto_thumbnail12.jpg")
+
+
+hxh1 = Episode.create!(anime_id: 3, title: "Departure x And x Friends", genre: 'action', episode_num: 1)
+hxh2 = Episode.create!(anime_id: 3, title: "Test x Of x Tests", genre: 'action', episode_num: 1)
+hxh3 = Episode.create!(anime_id: 3, title: "Rivals x In x Survival", genre: 'action', episode_num: 2)
+hxh4 = Episode.create!(anime_id: 3, title: "Hope x And x Ambition", genre: 'action', episode_num: 3)
+hxh5 = Episode.create!(anime_id: 3, title: "Hisoka x Is So x Sneaky", genre: 'action', episode_num: 4)
+hxh6 = Episode.create!(anime_id: 3, title: "A x Surprising x Challenge", genre: 'action', episode_num: 5)

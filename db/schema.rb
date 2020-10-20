@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_19_180402) do
+ActiveRecord::Schema.define(version: 2020_10_19_230640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 2020_10_19_180402) do
     t.integer "anime_id", null: false
     t.string "title", null: false
     t.string "genre", null: false
+    t.integer "episode_num"
     t.index ["anime_id"], name: "index_episodes_on_anime_id"
     t.index ["genre"], name: "index_episodes_on_genre"
     t.index ["title"], name: "index_episodes_on_title"

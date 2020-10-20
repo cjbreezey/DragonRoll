@@ -1,9 +1,16 @@
 .showAnime-container {
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .showAnime-header-container {
-    width: 925px;
+    width: 1000px;
     margin: 0 auto;
     margin-top: 1.5em;
     // background-color: blue;
@@ -24,13 +31,13 @@
     align-items: center;
 }
 
-.showAnime-description {
-    display: flex;
-    justify-content: flex-end;
-}
+// .showAnime-description {
+//     display: flex;
+//     justify-content: flex-end;
+// }
 
 .showAnime-content {
-    width: 35%;
+    width: 100%;
     // text-align: center;
 }
 
@@ -53,7 +60,7 @@
     height: 100%;
     max-height: 450px;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
 }

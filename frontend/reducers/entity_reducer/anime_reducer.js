@@ -5,9 +5,10 @@ const animeReducer = (state = {}, action) => {
     let nextState = Object.assign({}, state)
     switch(action.type) {
         case RECEIVE_ANIMES:
+            // debugger
             return action.animes
         case RECEIVE_ANIME:
-            debugger
+            // debugger
             return action.payload.animes
         default:
             return state;
