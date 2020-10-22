@@ -16,7 +16,13 @@ class User < ApplicationRecord
 
     has_one_attached :photo
 
-    has_many :bookmarks
+    has_many :bookmarked_animes,
+        foreign_key: :user_id,
+        class_name: :BookmarkedAnime
+
+    has_many :animes,
+        through: :bookmarked_animes,
+        source: :anime
 
     attr_reader :password
     after_initialize :ensure_session_token

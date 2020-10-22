@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :animes, only: [:show, :index]
     resources :episodes, only: :show
+    # resources :bookmarks, only: :index
+    resources :bookmarked_animes, only: [:show, :create, :destroy]
   end
 end

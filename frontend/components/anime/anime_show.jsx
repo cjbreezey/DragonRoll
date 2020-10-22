@@ -4,6 +4,7 @@ import AnimeShowEpisodeItem from './anime_show_episode_item'
 
 class AnimeShow extends React.Component {
     constructor(props) {
+        // debugger
         super(props);
         this.state = this.props.anime;
     }
@@ -12,10 +13,28 @@ class AnimeShow extends React.Component {
         this.props.fetchAnime(this.props.match.params.animeId).then(() => {
             this.setState(this.props.anime)
         })
+        window.scrollTo(0,0);
     }
 
     render() {
-        const { episodes } = this.props;
+        
+        const { episodes, createBookmarkedAnime, deleteBookmarkedAnime } = this.props;
+        // debugger
+        let bookmark;
+        if (this.props.bookmarked)
+        bookmark = (
+            <i
+            onClick={() => deleteBookmarkedAnime(this.props.anime.id)}
+            className="fas fa-orange title-bookmark fa-bookmark"
+            ></i>
+            )
+        else
+        bookmark = (
+            <i
+            onClick={() => createBookmarkedAnime(this.props.anime.id)}
+            className="fa-orange title-bookmark far fa-bookmark"
+            ></i>
+            )
         let showAnime;
         this.props.anime ? showAnime = this.props.anime : showAnime = null
         return (
@@ -23,7 +42,7 @@ class AnimeShow extends React.Component {
                 <div className='showAnime-container'>
                     <div className='showAnime-header-container'>
                         <div className='showAnime-title'>
-                            <header className='showAnime-title-text'>{showAnime.title}</header>
+                            <header className='showAnime-title-text'>{showAnime.title} {bookmark}</header>
                         </div>
                         <div className='episode-container'>
                             <div className='episode-list-container'>

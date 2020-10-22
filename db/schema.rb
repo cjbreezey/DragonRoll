@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_19_230640) do
+ActiveRecord::Schema.define(version: 2020_10_20_181057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,12 +45,17 @@ ActiveRecord::Schema.define(version: 2020_10_19_230640) do
     t.index ["title"], name: "index_animes_on_title", unique: true
   end
 
-  create_table "bookmarks", force: :cascade do |t|
+  create_table "bookmarked_animes", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "anime_id", null: false
+    t.boolean "bookmarked", default: false, null: false
+    t.index ["anime_id", "user_id"], name: "index_bookmarked_animes_on_anime_id_and_user_id", unique: true
+  end
+
+  create_table "bookmarks", force: :cascade do |t|
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["anime_id"], name: "index_bookmarks_on_anime_id"
     t.index ["user_id"], name: "index_bookmarks_on_user_id", unique: true
   end
 

@@ -15,6 +15,7 @@ class AnimeIndex extends React.Component {
         // debugger
         return (
             <div className='anime-container'>
+                <img src={window.dragonrollAd}/>
                 <div className='header-container'>
                     <header className="anime-header">Anime</header>
                 </div>

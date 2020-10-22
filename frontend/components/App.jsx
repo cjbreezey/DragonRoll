@@ -6,6 +6,8 @@ import NavbarContainer from './navbar/navbar_container'
 import AnimeIndexContainer from './anime/anime_index_container'
 import AnimeShowContainer from './anime/anime_show_container'
 import EpisodeShowContainer from './anime/episode_show_container'
+// import BookmarkedAnimeContainer from './bookmarked/bookmarked_anime_container'
+// import BookmarkedAnime from '../components/bookmarked/bookmarked_anime'
 
 const App = (props) => {
     let navbar = <NavbarContainer />
@@ -16,6 +18,7 @@ const App = (props) => {
         <main>
             {navbar} 
             <Switch>
+                {/* <Route path="/bookmarked_animes/:userId" component={BookmarkedAnime} /> */}
                 <ProtectedRoute path="/animes/:animeId" component={AnimeShowContainer} />
                 <ProtectedRoute path="/episodes/:episodeId" component={EpisodeShowContainer} />
                 <AuthRoute path="/login" component={Splash} />

@@ -21,3 +21,10 @@ json.episodes do
         end
     end
 end
+
+json.bookmarkedAnime do
+    bookmarked = current_user.bookmarked_animes.where(anime_id: @anime.id).first
+    if bookmarked
+        json.extract! bookmarked, :anime_id, :id, :user_id
+    end
+end

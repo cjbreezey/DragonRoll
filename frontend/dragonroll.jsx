@@ -4,6 +4,7 @@ import configureStore from './store/store';
 import {login, logout, signup} from './actions/session_actions'
 import Root from './components/root'
 import { fetchAnime, fetchAnimes } from '../frontend/actions/anime_actions';
+import { createBookmarkedAnime } from './actions/bookmarked_anime_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
@@ -24,10 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // window testing
     window.store = store;
+    window.dispatch = store.dispatch;
     window.login = login;
     window.signup = signup;
     window.logout = logout;
     window.fetchAnimes = fetchAnimes
     window.fetchAnime = fetchAnime
+    window.createBookmarkedAnime = createBookmarkedAnime
     // window testing
 })
