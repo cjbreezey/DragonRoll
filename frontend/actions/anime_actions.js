@@ -3,10 +3,10 @@ import * as AnimeAPI from '../util/anime_api_util'
 export const RECEIVE_ANIMES = "RECEIVE_ANIMES"
 export const RECEIVE_ANIME = "RECEIVE_ANIME"
 
-export const receiveAnimes = (animes) => {
+export const receiveAnimes = (payload) => {
     return ({
         type: RECEIVE_ANIMES,
-        animes
+        payload
     })
 }
 

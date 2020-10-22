@@ -99,7 +99,7 @@ export default ({ user, logout }) => {
                         </li>
                         <li>
                             <main>
-                                <NavLink to="/login">
+                                <NavLink to="/bookmarked_animes">
                                     <i className="far fa-bookmark"></i>
                                     <div className='nav-text'><span>Bookmarks</span></div>
                                 </NavLink>

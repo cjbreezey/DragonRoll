@@ -1,19 +1,21 @@
 import { connect } from 'react-redux'
-import { createBookmarkedAnime, deleteBookmarkedAnime, fetchBookmarkedAnimes} from '../../actions/bookmarked_anime_actions'
+import { deleteBookmarkedAnime, fetchBookmarkedAnimes } from '../../actions/bookmarked_anime_actions'
+import { getBookmarkedAnimes, findCurrentUser } from '../../reducers/selectors'
 import BookmarkedAnime from './bookmarked_anime'
 
 const mapStateToProps = (state, ownProps) => {
+    debugger
     return ({
-        user_id: state.session.current_user.id,
-        bookmarkedAnime: Object.values(state.bookmarked_anime)
+        user: findCurrentUser(state),
+        bookmarkedAnime: getBookmarkedAnimes(state)
+        // animes: state.entities.animes
     })
 }
 
 const mapDispatchToProps = (dispatch) => {
     return ({
-        createBookmarkedAnime: (id) => dispatch(createBookmarkedAnime(id)),
         deleteBookmarkedAnime: (id) => dispatch(deleteBookmarkedAnime(id)),
-        fetchBookmarkedAnimes: (userId) => dispatch(fetchBookmarkedAnimes(userId))
+        fetchBookmarkedAnimes: () => dispatch(fetchBookmarkedAnimes())
     })
 }
 

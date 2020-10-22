@@ -339,6 +339,10 @@ sao1 = Episode.create!(anime_id: 5, title: "The World of Swords", genre: 'advent
 sao2 = Episode.create!(anime_id: 5, title: "Beater", genre: 'adventure', episode_num: 2)
 sao3 = Episode.create!(anime_id: 5, title: "Red Nosed Reindeer", genre: 'adventure', episode_num: 3)
 sao4 = Episode.create!(anime_id: 5, title: "The Black Swordsman", genre: 'adventure', episode_num: 4)
+sao5 = Episode.create!(anime_id: 5, title: "A Crime Within the Walls", genre: 'adventure', episode_num: 5)
+sao6 = Episode.create!(anime_id: 5, title: "Illusionary Avenger", genre: 'adventure', episode_num: 6)
+sao7 = Episode.create!(anime_id: 5, title: "The Temperature of the Heart", genre: 'adventure', episode_num: 7)
+sao8 = Episode.create!(anime_id: 5, title: "The Sword Dance of White and Black", genre: 'adventure', episode_num: 8)
 
 sao1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sao_thumbnail1.jpg')
 sao1.thumbnail.attach(io: sao1_thumbnail, filename: "img_sao_thumbnail1.jpg")
@@ -352,10 +356,26 @@ sao3.thumbnail.attach(io: sao3_thumbnail, filename: "img_sao_thumbnail3.jpg")
 sao4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sao_thumbnail4.jpg')
 sao4.thumbnail.attach(io: sao4_thumbnail, filename: "img_sao_thumbnail4.jpg")
 
+sao5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sao_thumbnail5.jpg')
+sao5.thumbnail.attach(io: sao5_thumbnail, filename: "img_sao_thumbnail5.jpg")
+
+sao6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sao_thumbnail6.jpg')
+sao6.thumbnail.attach(io: sao6_thumbnail, filename: "img_sao_thumbnail6.jpg")
+
+sao7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sao_thumbnail7.jpg')
+sao7.thumbnail.attach(io: sao7_thumbnail, filename: "img_sao_thumbnail7.jpg")
+
+sao8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sao_thumbnail8.jpg')
+sao8.thumbnail.attach(io: sao8_thumbnail, filename: "img_sao_thumbnail8.jpg")
+
 op1 = Episode.create!(anime_id: 6, title: "I'm Luffy! The Man Who's Gonna Be King of the Pirates!", genre: 'action', episode_num: 1)
 op2 = Episode.create!(anime_id: 6, title: "Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!", genre: 'action', episode_num: 2)
 op3 = Episode.create!(anime_id: 6, title: "Morgan versus Luffy! Who's the Mysterious Pretty girl?", genre: 'action', episode_num: 3)
 op4 = Episode.create!(anime_id: 6, title: "Luffy's Past! Enter Red-Haired Shanks!", genre: 'action', episode_num: 4)
+op5 = Episode.create!(anime_id: 6, title: "A Terrifying Mysterious Power! Captain Buggy, the Clown Pirate!", genre: 'action', episode_num: 5)
+op6 = Episode.create!(anime_id: 6, title: "Desperate Situation! Beast Tamer Mohji vs. Luffy!", genre: 'action', episode_num: 6)
+op7 = Episode.create!(anime_id: 6, title: "Epic Showdown! Swordsman Zoro vs. Acrobat Cabaji!", genre: 'action', episode_num: 7)
+op8 = Episode.create!(anime_id: 6, title: "Who Gets the Last Laugh?", genre: 'action', episode_num: 8)
 
 op1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/op_thumbnail1.jpg')
 op1.thumbnail.attach(io: op1_thumbnail, filename: "img_op_thumbnail1.jpg")
@@ -369,10 +389,27 @@ op3.thumbnail.attach(io: op3_thumbnail, filename: "img_op_thumbnail3.jpg")
 op4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/op_thumbnail4.jpg')
 op4.thumbnail.attach(io: op4_thumbnail, filename: "img_op_thumbnail4.jpg")
 
+op5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/op_thumbnail5.jpg')
+op5.thumbnail.attach(io: op5_thumbnail, filename: "img_op_thumbnail5.jpg")
+
+op6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/op_thumbnail6.jpg')
+op6.thumbnail.attach(io: op6_thumbnail, filename: "img_op_thumbnail6.jpg")
+
+op7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/op_thumbnail7.jpg')
+op7.thumbnail.attach(io: op7_thumbnail, filename: "img_op_thumbnail7.jpg")
+
+op8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/op_thumbnail8.jpg')
+op8.thumbnail.attach(io: op8_thumbnail, filename: "img_op_thumbnail8.jpg")
+
 ff1 = Episode.create!(anime_id: 7, title: "Shinra Kusakabe Enlists", genre: 'action', episode_num: 1)
 ff2 = Episode.create!(anime_id: 7, title: "The Heard of a Fire Soldier", genre: 'action', episode_num: 2)
 ff3 = Episode.create!(anime_id: 7, title: "The Rookie Fire Soldier Games", genre: 'action', episode_num: 3)
 ff4 = Episode.create!(anime_id: 7, title: "The Hero and the Princess", genre: 'action', episode_num: 4)
+ff5 = Episode.create!(anime_id: 7, title: "The Battle Begins", genre: 'action', episode_num: 5)
+ff6 = Episode.create!(anime_id: 7, title: "The Spark of Promise", genre: 'action', episode_num: 6)
+ff7 = Episode.create!(anime_id: 7, title: "The Investigation of the 1st Commences", genre: 'action', episode_num: 7)
+ff8 = Episode.create!(anime_id: 7, title: "Infernal Insects", genre: 'action', episode_num: 8)
+ff9 = Episode.create!(anime_id: 7, title: "The Spreading Malice", genre: 'action', episode_num: 9)
 
 ff1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ff_thumbnail1.jpg')
 ff1.thumbnail.attach(io: ff1_thumbnail, filename: "img_ff_thumbnail1.jpg")
@@ -386,10 +423,29 @@ ff3.thumbnail.attach(io: ff3_thumbnail, filename: "img_ff_thumbnail3.jpg")
 ff4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ff_thumbnail4.jpg')
 ff4.thumbnail.attach(io: ff4_thumbnail, filename: "img_ff_thumbnail4.jpg")
 
+ff5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ff_thumbnail5.jpg')
+ff5.thumbnail.attach(io: ff5_thumbnail, filename: "img_ff_thumbnail5.jpg")
+
+ff6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ff_thumbnail6.jpg')
+ff6.thumbnail.attach(io: ff6_thumbnail, filename: "img_ff_thumbnail6.jpg")
+
+ff7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ff_thumbnail7.jpg')
+ff7.thumbnail.attach(io: ff7_thumbnail, filename: "img_ff_thumbnail7.jpg")
+
+ff8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ff_thumbnail8.jpg')
+ff8.thumbnail.attach(io: ff8_thumbnail, filename: "img_ff_thumbnail8.jpg")
+
+ff9_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ff_thumbnail9.jpg')
+ff9.thumbnail.attach(io: ff9_thumbnail, filename: "img_ff_thumbnail9.jpg")
+
 kb1 = Episode.create!(anime_id: 8, title: "I am Kuroko", genre: 'sports', episode_num: 1)
 kb2 = Episode.create!(anime_id: 8, title: "I'm Serious", genre: 'sports', episode_num: 2)
 kb3 = Episode.create!(anime_id: 8, title: "It's Better if I Can't Win", genre: 'sports', episode_num: 3)
 kb4 = Episode.create!(anime_id: 8, title: "Take Care of the Counter Attack!", genre: 'sports', episode_num: 4)
+kb5 = Episode.create!(anime_id: 8, title: "Your Basketball", genre: 'sports', episode_num: 5)
+kb6 = Episode.create!(anime_id: 8, title: "Let Me Tell You Two Things", genre: 'sports', episode_num: 6)
+kb7 = Episode.create!(anime_id: 8, title: "You'll See Something Amazing", genre: 'sports', episode_num: 7)
+kb8 = Episode.create!(anime_id: 8, title: "Now That I Think About It", genre: 'sports', episode_num: 8)
 
 kb1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kb_thumbnail1.jpg')
 kb1.thumbnail.attach(io: kb1_thumbnail, filename: "img_kb_thumbnail1.jpg")
@@ -403,10 +459,26 @@ kb3.thumbnail.attach(io: kb3_thumbnail, filename: "img_kb_thumbnail3.jpg")
 kb4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kb_thumbnail4.jpg')
 kb4.thumbnail.attach(io: kb4_thumbnail, filename: "img_kb_thumbnail4.jpg")
 
+kb5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kb_thumbnail5.jpg')
+kb5.thumbnail.attach(io: kb5_thumbnail, filename: "img_kb_thumbnail5.jpg")
+
+kb6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kb_thumbnail6.jpg')
+kb6.thumbnail.attach(io: kb6_thumbnail, filename: "img_kb_thumbnail6.jpg")
+
+kb7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kb_thumbnail7.jpg')
+kb7.thumbnail.attach(io: kb7_thumbnail, filename: "img_kb_thumbnail7.jpg")
+
+kb8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/kb_thumbnail8.jpg')
+kb8.thumbnail.attach(io: kb8_thumbnail, filename: "img_kb_thumbnail8.jpg")
+
 tog1 = Episode.create!(anime_id: 9, title: "BALL", genre: 'adventure', episode_num: 1)
 tog2 = Episode.create!(anime_id: 9, title: "3/400 (Three Four-Hundredths", genre: 'adventure', episode_num: 2)
 tog3 = Episode.create!(anime_id: 9, title: "The Correct Door", genre: 'adventure', episode_num: 3)
 tog4 = Episode.create!(anime_id: 9, title: "The Green April", genre: 'adventure', episode_num: 4)
+tog5 = Episode.create!(anime_id: 9, title: "The Crown's Fate", genre: 'adventure', episode_num: 5)
+tog6 = Episode.create!(anime_id: 9, title: "Position Selection", genre: 'adventure', episode_num: 6)
+tog7 = Episode.create!(anime_id: 9, title: "Lunch and Tag", genre: 'adventure', episode_num: 7)
+tog8 = Episode.create!(anime_id: 9, title: "Khun's Strategy", genre: 'adventure', episode_num: 8)
 
 tog1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tog_thumbnail1.jpg')
 tog1.thumbnail.attach(io: tog1_thumbnail, filename: "img_tog_thumbnail1.jpg")
@@ -420,10 +492,26 @@ tog3.thumbnail.attach(io: tog3_thumbnail, filename: "img_tog_thumbnail3.jpg")
 tog4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tog_thumbnail4.jpg')
 tog4.thumbnail.attach(io: tog4_thumbnail, filename: "img_tog_thumbnail4.jpg")
 
+tog5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tog_thumbnail5.jpg')
+tog5.thumbnail.attach(io: tog5_thumbnail, filename: "img_tog_thumbnail5.jpg")
+
+tog6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tog_thumbnail6.jpg')
+tog6.thumbnail.attach(io: tog6_thumbnail, filename: "img_tog_thumbnail6.jpg")
+
+tog7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tog_thumbnail7.jpg')
+tog7.thumbnail.attach(io: tog7_thumbnail, filename: "img_tog_thumbnail7.jpg")
+
+tog8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tog_thumbnail8.jpg')
+tog8.thumbnail.attach(io: tog8_thumbnail, filename: "img_tog_thumbnail8.jpg")
+
 sh1 = Episode.create!(anime_id: 10, title: "The Shield Hero", genre: 'adventure', episode_num: 1)
 sh2 = Episode.create!(anime_id: 10, title: "The Slave Girl", genre: 'adventure', episode_num: 2)
 sh3 = Episode.create!(anime_id: 10, title: "Wave of Catastrophe", genre: 'adventure', episode_num: 3)
 sh4 = Episode.create!(anime_id: 10, title: "Lullaby at Dawn", genre: 'adventure', episode_num: 4)
+sh5 = Episode.create!(anime_id: 10, title: "Filo", genre: 'adventure', episode_num: 5)
+sh6 = Episode.create!(anime_id: 10, title: "A New Comrade", genre: 'adventure', episode_num: 6)
+sh7 = Episode.create!(anime_id: 10, title: "The Savior of the Heavenly Fowl", genre: 'adventure', episode_num: 7)
+sh8 = Episode.create!(anime_id: 10, title: "Curse Shield", genre: 'adventure', episode_num: 8)
 
 sh1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sh_thumbnail1.jpg')
 sh1.thumbnail.attach(io: sh1_thumbnail, filename: "img_sh_thumbnail1.jpg")
@@ -437,10 +525,26 @@ sh3.thumbnail.attach(io: sh3_thumbnail, filename: "img_sh_thumbnail3.jpg")
 sh4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sh_thumbnail4.jpg')
 sh4.thumbnail.attach(io: sh4_thumbnail, filename: "img_sh_thumbnail4.jpg")
 
+sh5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sh_thumbnail5.jpg')
+sh5.thumbnail.attach(io: sh5_thumbnail, filename: "img_sh_thumbnail5.jpg")
+
+sh6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sh_thumbnail6.jpg')
+sh6.thumbnail.attach(io: sh6_thumbnail, filename: "img_sh_thumbnail6.jpg")
+
+sh7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sh_thumbnail7.jpg')
+sh7.thumbnail.attach(io: sh7_thumbnail, filename: "img_sh_thumbnail7.jpg")
+
+sh8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/sh_thumbnail8.jpg')
+sh8.thumbnail.attach(io: sh8_thumbnail, filename: "img_sh_thumbnail8.jpg")
+
 digimon1 = Episode.create!(anime_id: 11, title: "TOKYO DIGITAL CRISIS", genre: 'action', episode_num: 1)
 digimon2 = Episode.create!(anime_id: 11, title: "WAR GAME", genre: 'action', episode_num: 2)
 digimon3 = Episode.create!(anime_id: 11, title: "AND TO THE DIGITAL WORLD", genre: 'action', episode_num: 3)
 digimon4 = Episode.create!(anime_id: 11, title: "BIRDRAMON SOARS", genre: 'action', episode_num: 4)
+digimon5 = Episode.create!(anime_id: 11, title: "THE HOLY DIGIMON", genre: 'action', episode_num: 5)
+digimon6 = Episode.create!(anime_id: 11, title: "THE TARGETED KINGDOM", genre: 'action', episode_num: 6)
+digimon7 = Episode.create!(anime_id: 11, title: "THAT BOY IS JOE KIDO", genre: 'action', episode_num: 7)
+digimon8 = Episode.create!(anime_id: 11, title: "THE CHILDREN'S ATTACK ON THE FORTRESS", genre: 'action', episode_num: 8)
 
 digimon1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon_thumbnail1.jpg')
 digimon1.thumbnail.attach(io: digimon1_thumbnail, filename: "img_digimon_thumbnail1.jpg")
@@ -454,10 +558,26 @@ digimon3.thumbnail.attach(io: digimon3_thumbnail, filename: "img_digimon_thumbna
 digimon4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon_thumbnail4.jpg')
 digimon4.thumbnail.attach(io: digimon4_thumbnail, filename: "img_digimon_thumbnail4.jpg")
 
+digimon5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon_thumbnail5.jpg')
+digimon5.thumbnail.attach(io: digimon5_thumbnail, filename: "img_digimon_thumbnail5.jpg")
+
+digimon6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon_thumbnail6.jpg')
+digimon6.thumbnail.attach(io: digimon6_thumbnail, filename: "img_digimon_thumbnail6.jpg")
+
+digimon7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon_thumbnail7.jpg')
+digimon7.thumbnail.attach(io: digimon7_thumbnail, filename: "img_digimon_thumbnail7.jpg")
+
+digimon8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/digimon_thumbnail8.jpg')
+digimon8.thumbnail.attach(io: digimon8_thumbnail, filename: "img_digimon_thumbnail8.jpg")
+
 drstone1 = Episode.create!(anime_id: 12, title: "Stone World", genre: 'sci-fi', episode_num: 1)
 drstone2 = Episode.create!(anime_id: 12, title: "King of the Stone World", genre: 'sci-fi', episode_num: 2)
 drstone3 = Episode.create!(anime_id: 12, title: "Weapons of Science", genre: 'sci-fi', episode_num: 3)
 drstone4 = Episode.create!(anime_id: 12, title: "Fire the Smoke Signal", genre: 'sci-fi', episode_num: 4)
+drstone5 = Episode.create!(anime_id: 12, title: "Stone World the Beginning", genre: 'sci-fi', episode_num: 5)
+drstone6 = Episode.create!(anime_id: 12, title: "Two Nations of the Stone World", genre: 'sci-fi', episode_num: 6)
+drstone7 = Episode.create!(anime_id: 12, title: "Where Two Million Years Have Gone", genre: 'sci-fi', episode_num: 7)
+drstone8 = Episode.create!(anime_id: 12, title: "Stone Road", genre: 'sci-fi', episode_num: 8)
 
 drstone1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drstone_thumbnail1.jpg')
 drstone1.thumbnail.attach(io: drstone1_thumbnail, filename: "img_drstone_thumbnail1.jpg")
@@ -471,10 +591,26 @@ drstone3.thumbnail.attach(io: drstone3_thumbnail, filename: "img_drstone_thumbna
 drstone4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drstone_thumbnail4.jpg')
 drstone4.thumbnail.attach(io: drstone4_thumbnail, filename: "img_drstone_thumbnail4.jpg")
 
+drstone5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drstone_thumbnail5.jpg')
+drstone5.thumbnail.attach(io: drstone5_thumbnail, filename: "img_drstone_thumbnail5.jpg")
+
+drstone6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drstone_thumbnail6.jpg')
+drstone6.thumbnail.attach(io: drstone6_thumbnail, filename: "img_drstone_thumbnail6.jpg")
+
+drstone7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drstone_thumbnail7.jpg')
+drstone7.thumbnail.attach(io: drstone7_thumbnail, filename: "img_drstone_thumbnail7.jpg")
+
+drstone8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/drstone_thumbnail8.jpg')
+drstone8.thumbnail.attach(io: drstone8_thumbnail, filename: "img_drstone_thumbnail8.jpg")
+
 bleach1 = Episode.create!(anime_id: 13, title: "The Day I Became a Shinigami", genre: 'action', episode_num: 1)
 bleach2 = Episode.create!(anime_id: 13, title: "A Shinigami's Work", genre: 'action', episode_num: 2)
 bleach3 = Episode.create!(anime_id: 13, title: "The Older Brother's Wish, the Younger Sister's Wish", genre: 'action', episode_num: 3)
 bleach4 = Episode.create!(anime_id: 13, title: "Cursed Parakeet", genre: 'action', episode_num: 4)
+bleach5 = Episode.create!(anime_id: 13, title: "Beat the Invisible Enemy!", genre: 'action', episode_num: 5)
+bleach6 = Episode.create!(anime_id: 13, title: "Fight to the Death! Ichigo vs. Ichigo", genre: 'action', episode_num: 6)
+bleach7 = Episode.create!(anime_id: 13, title: "Greetings from a Stuffed Lion", genre: 'action', episode_num: 7)
+bleach8 = Episode.create!(anime_id: 13, title: "June 17, Memories in the Rain", genre: 'action', episode_num: 8)
 
 bleach1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/bleach_thumbnail1.jpg')
 bleach1.thumbnail.attach(io: bleach1_thumbnail, filename: "img_bleach_thumbnail1.jpg")
@@ -488,10 +624,26 @@ bleach3.thumbnail.attach(io: bleach3_thumbnail, filename: "img_bleach_thumbnail3
 bleach4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/bleach_thumbnail4.jpg')
 bleach4.thumbnail.attach(io: bleach4_thumbnail, filename: "img_bleach_thumbnail4.jpg")
 
+bleach5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/bleach_thumbnail5.jpg')
+bleach5.thumbnail.attach(io: bleach5_thumbnail, filename: "img_bleach_thumbnail5.jpg")
+
+bleach6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/bleach_thumbnail6.jpg')
+bleach6.thumbnail.attach(io: bleach6_thumbnail, filename: "img_bleach_thumbnail6.jpg")
+
+bleach7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/bleach_thumbnail7.jpg')
+bleach7.thumbnail.attach(io: bleach7_thumbnail, filename: "img_bleach_thumbnail7.jpg")
+
+bleach8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/bleach_thumbnail8.jpg')
+bleach8.thumbnail.attach(io: bleach8_thumbnail, filename: "img_bleach_thumbnail8.jpg")
+
 fw1 = Episode.create!(anime_id: 14, title: "An Endless Wasteland", genre: 'cooking', episode_num: 1)
 fw2 = Episode.create!(anime_id: 14, title: "God Tongue", genre: 'cooking', episode_num: 2)
 fw3 = Episode.create!(anime_id: 14, title: "That Chef Never Smiles", genre: 'cooking', episode_num: 3)
 fw4 = Episode.create!(anime_id: 14, title: "The Madonna of the Polar Star", genre: 'cooking', episode_num: 4)
+fw5 = Episode.create!(anime_id: 14, title: "The Ice Queen and the Spring storm", genre: 'cooking', episode_num: 5)
+fw6 = Episode.create!(anime_id: 14, title: "The Meat Invader", genre: 'cooking', episode_num: 6)
+fw7 = Episode.create!(anime_id: 14, title: "The Quiet Don the Eloquent Don", genre: 'cooking', episode_num: 7)
+fw8 = Episode.create!(anime_id: 14, title: "The Concerto of Inspiration and Imagination", genre: 'cooking', episode_num: 8)
 
 fw1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fw_thumbnail1.jpg')
 fw1.thumbnail.attach(io: fw1_thumbnail, filename: "img_fw_thumbnail1.jpg")
@@ -505,10 +657,26 @@ fw3.thumbnail.attach(io: fw3_thumbnail, filename: "img_fw_thumbnail3.jpg")
 fw4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fw_thumbnail4.jpg')
 fw4.thumbnail.attach(io: fw4_thumbnail, filename: "img_fw_thumbnail4.jpg")
 
+fw5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fw_thumbnail5.jpg')
+fw5.thumbnail.attach(io: fw5_thumbnail, filename: "img_fw_thumbnail5.jpg")
+
+fw6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fw_thumbnail6.jpg')
+fw6.thumbnail.attach(io: fw6_thumbnail, filename: "img_fw_thumbnail6.jpg")
+
+fw7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fw_thumbnail7.jpg')
+fw7.thumbnail.attach(io: fw7_thumbnail, filename: "img_fw_thumbnail7.jpg")
+
+fw8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/fw_thumbnail8.jpg')
+fw8.thumbnail.attach(io: fw8_thumbnail, filename: "img_fw_thumbnail8.jpg")
+
 ds1 = Episode.create!(anime_id: 15, title: "Cruelty", genre: 'action', episode_num: 1)
 ds2 = Episode.create!(anime_id: 15, title: "Trainer Sakonji Urokodaki", genre: 'action', episode_num: 2)
 ds3 = Episode.create!(anime_id: 15, title: "Sabito and Makomo", genre: 'action', episode_num: 3)
 ds4 = Episode.create!(anime_id: 15, title: "Final Selection", genre: 'action', episode_num: 4)
+ds5 = Episode.create!(anime_id: 15, title: "My Own Steel", genre: 'action', episode_num: 5)
+ds6 = Episode.create!(anime_id: 15, title: "Swordsman Accompanying a Demon", genre: 'action', episode_num: 6)
+ds7 = Episode.create!(anime_id: 15, title: "Muzan Kibutsuji", genre: 'action', episode_num: 7)
+ds8 = Episode.create!(anime_id: 15, title: "The Smell of Enchanting Blood", genre: 'action', episode_num: 8)
 
 ds1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ds_thumbnail1.jpg')
 ds1.thumbnail.attach(io: ds1_thumbnail, filename: "img_ds_thumbnail1.jpg")
@@ -522,10 +690,26 @@ ds3.thumbnail.attach(io: ds3_thumbnail, filename: "img_ds_thumbnail3.jpg")
 ds4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ds_thumbnail4.jpg')
 ds4.thumbnail.attach(io: ds4_thumbnail, filename: "img_ds_thumbnail4.jpg")
 
+ds5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ds_thumbnail5.jpg')
+ds5.thumbnail.attach(io: ds5_thumbnail, filename: "img_ds_thumbnail5.jpg")
+
+ds6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ds_thumbnail6.jpg')
+ds6.thumbnail.attach(io: ds6_thumbnail, filename: "img_ds_thumbnail6.jpg")
+
+ds7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ds_thumbnail7.jpg')
+ds7.thumbnail.attach(io: ds7_thumbnail, filename: "img_ds_thumbnail7.jpg")
+
+ds8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ds_thumbnail8.jpg')
+ds8.thumbnail.attach(io: ds8_thumbnail, filename: "img_ds_thumbnail8.jpg")
+
 jba1 = Episode.create!(anime_id: 16, title: "Dio the Invader", genre: 'adventure', episode_num: 1)
 jba2 = Episode.create!(anime_id: 16, title: "A Letter from the Past", genre: 'adventure', episode_num: 2)
 jba3 = Episode.create!(anime_id: 16, title: "Youth with Dio", genre: 'adventure', episode_num: 3)
 jba4 = Episode.create!(anime_id: 16, title: "Overdrive", genre: 'adventure', episode_num: 4)
+jba5 = Episode.create!(anime_id: 16, title: "The Dark Knights", genre: 'adventure', episode_num: 5)
+jba6 = Episode.create!(anime_id: 16, title: "Tomorrow's Courage", genre: 'adventure', episode_num: 6)
+jba7 = Episode.create!(anime_id: 16, title: "Sorrowful Successor", genre: 'adventure', episode_num: 7)
+jba8 = Episode.create!(anime_id: 16, title: "Bloody Battle! JoJo & Dio", genre: 'adventure', episode_num: 8)
 
 jba1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/jba_thumbnail1.jpg')
 jba1.thumbnail.attach(io: jba1_thumbnail, filename: "img_jba_thumbnail1.jpg")
@@ -538,6 +722,18 @@ jba3.thumbnail.attach(io: jba3_thumbnail, filename: "img_jba_thumbnail3.jpg")
 
 jba4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/jba_thumbnail4.jpg')
 jba4.thumbnail.attach(io: jba4_thumbnail, filename: "img_jba_thumbnail4.jpg")
+
+jba5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/jba_thumbnail5.jpg')
+jba5.thumbnail.attach(io: jba5_thumbnail, filename: "img_jba_thumbnail5.jpg")
+
+jba6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/jba_thumbnail6.jpg')
+jba6.thumbnail.attach(io: jba6_thumbnail, filename: "img_jba_thumbnail6.jpg")
+
+jba7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/jba_thumbnail7.jpg')
+jba7.thumbnail.attach(io: jba7_thumbnail, filename: "img_jba_thumbnail7.jpg")
+
+jba8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/jba_thumbnail8.jpg')
+jba8.thumbnail.attach(io: jba8_thumbnail, filename: "img_jba_thumbnail8.jpg")
 
 jk1 = Episode.create!(anime_id: 17, title: "Ryoumen Sakuna", genre: "action", episode_num: 1)
 jk2 = Episode.create!(anime_id: 17, title: "For Myself", genre: "action", episode_num: 2)
@@ -552,10 +748,14 @@ jk2.thumbnail.attach(io: jk2_thumbnail, filename: "img_jk_thumbnail2.jpg")
 jk3_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/jk_thumbnail3.jpg')
 jk3.thumbnail.attach(io: jk3_thumbnail, filename: "img_jk_thumbnail3.jpg")
 
-ygo1 = Episode.create!(anime_id: 18, title: "The Fearsome Blue-Eyes White Dragon", episode_num: 1)
-ygo2 = Episode.create!(anime_id: 18, title: "Illusionist Faceless Mage's trap", episode_num: 2)
-ygo3 = Episode.create!(anime_id: 18, title: "Exodia Lost", episode_num: 3)
-ygo4 = Episode.create!(anime_id: 18, title: "Insector Combo", episode_num: 4)
+ygo1 = Episode.create!(anime_id: 18, title: "The Fearsome Blue-Eyes White Dragon", genre: 'fantasy', episode_num: 1)
+ygo2 = Episode.create!(anime_id: 18, title: "Illusionist Faceless Mage's trap", genre: 'fantasy', episode_num: 2)
+ygo3 = Episode.create!(anime_id: 18, title: "Exodia Lost", genre: 'fantasy', episode_num: 3)
+ygo4 = Episode.create!(anime_id: 18, title: "Insector Combo", genre: 'fantasy', episode_num: 4)
+ygo5 = Episode.create!(anime_id: 18, title: "Perfectly Ultimate Great Moth", genre: 'fantasy', episode_num: 5)
+ygo6 = Episode.create!(anime_id: 18, title: "Gorgeous Harpie Lady", genre: 'fantasy', episode_num: 6)
+ygo7 = Episode.create!(anime_id: 18, title: "Kariyu-Shin", genre: 'fantasy', episode_num: 7)
+ygo8 = Episode.create!(anime_id: 18, title: "Stolen Blue-Eyes White Dragon", genre: 'fantasy', episode_num: 8)
 
 ygo1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ygo_thumbnail1.jpg')
 ygo1.thumbnail.attach(io: ygo1_thumbnail, filename: "img_ygo_thumbnail1.jpg")
@@ -569,10 +769,26 @@ ygo3.thumbnail.attach(io: ygo3_thumbnail, filename: "img_ygo_thumbnail3.jpg")
 ygo4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ygo_thumbnail4.jpg')
 ygo4.thumbnail.attach(io: ygo4_thumbnail, filename: "img_ygo_thumbnail4.jpg")
 
+ygo5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ygo_thumbnail5.jpg')
+ygo5.thumbnail.attach(io: ygo5_thumbnail, filename: "img_ygo_thumbnail5.jpg")
+
+ygo6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ygo_thumbnail6.jpg')
+ygo6.thumbnail.attach(io: ygo6_thumbnail, filename: "img_ygo_thumbnail6.jpg")
+
+ygo7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ygo_thumbnail7.jpg')
+ygo7.thumbnail.attach(io: ygo7_thumbnail, filename: "img_ygo_thumbnail7.jpg")
+
+ygo8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/ygo_thumbnail8.jpg')
+ygo8.thumbnail.attach(io: ygo8_thumbnail, filename: "img_ygo_thumbnail8.jpg")
+
 dbs1 = Episode.create!(anime_id: 19, title: "The Peace Reward - Who Will Get the 100 Million Zeni?", genre: 'action', episode_num: 1)
 dbs2 = Episode.create!(anime_id: 19, title: "To the Promised Resort! Vegeta Goes on a Family Trip?!", genre: 'action', episode_num: 2)
 dbs3 = Episode.create!(anime_id: 19, title: "Where's the Rest of the Dream?! In Search of the Super Saiyan God!", genre: 'action', episode_num: 3)
 dbs4 = Episode.create!(anime_id: 19, title: "Aim for the Dragon Balls! Pilaf Gang in Action", genre: 'action', episode_num: 4)
+dbs5 = Episode.create!(anime_id: 19, title: "The Ultimate Fight on King Kai's Planet! Goku vs the God of Destruction Beerus", genre: 'action', episode_num: 5)
+dbs6 = Episode.create!(anime_id: 19, title: "Don't Anger the God of Destruction! Excitement at the Birthday Party", genre: 'action', episode_num: 6)
+dbs7 = Episode.create!(anime_id: 19, title: "How Dare You Hurt My Bulma! Vegeta's Sudden, Angry Shift?!", genre: 'action', episode_num: 7)
+dbs8 = Episode.create!(anime_id: 19, title: "Goku Arrives! A Last Chance from Beerus Sama?!", genre: 'action', episode_num: 8)
 
 dbs1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/dbs_thumbnail1.jpg')
 dbs1.thumbnail.attach(io: dbs1_thumbnail, filename: "img_dbs_thumbnail1.jpg")
@@ -590,6 +806,10 @@ tpn1 = Episode.create!(anime_id: 20, title: "121045", genre: "thriller", episode
 tpn2 = Episode.create!(anime_id: 20, title: "131045", genre: "thriller", episode_num: 2)
 tpn3 = Episode.create!(anime_id: 20, title: "181045", genre: "thriller", episode_num: 3)
 tpn4 = Episode.create!(anime_id: 20, title: "291045", genre: "thriller", episode_num: 4)
+tpn5 = Episode.create!(anime_id: 20, title: "301045", genre: "thriller", episode_num: 5)
+tpn6 = Episode.create!(anime_id: 20, title: "311045", genre: "thriller", episode_num: 6)
+tpn7 = Episode.create!(anime_id: 20, title: "011145", genre: "thriller", episode_num: 7)
+tpn8 = Episode.create!(anime_id: 20, title: "021145", genre: "thriller", episode_num: 8)
 
 tpn1_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tpn_thumbnail1.jpg')
 tpn1.thumbnail.attach(io: tpn1_thumbnail, filename: "img_tpn_thumbnail1.jpg")
@@ -602,3 +822,15 @@ tpn3.thumbnail.attach(io: tpn3_thumbnail, filename: "img_tpn_thumbnail3.jpg")
 
 tpn4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tpn_thumbnail4.jpg')
 tpn4.thumbnail.attach(io: tpn4_thumbnail, filename: "img_tpn_thumbnail4.jpg")
+
+tpn5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tpn_thumbnail5.jpg')
+tpn5.thumbnail.attach(io: tpn5_thumbnail, filename: "img_tpn_thumbnail5.jpg")
+
+tpn6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tpn_thumbnail6.jpg')
+tpn6.thumbnail.attach(io: tpn6_thumbnail, filename: "img_tpn_thumbnail6.jpg")
+
+tpn7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tpn_thumbnail7.jpg')
+tpn7.thumbnail.attach(io: tpn7_thumbnail, filename: "img_tpn_thumbnail7.jpg")
+
+tpn8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/tpn_thumbnail8.jpg')
+tpn8.thumbnail.attach(io: tpn8_thumbnail, filename: "img_tpn_thumbnail8.jpg")

@@ -1,11 +1,19 @@
 import * as BookmarkedAnimeUtil from '../util/bookmarked_animes_api_util'
 
 export const RECEIVE_BOOKMARKED_ANIME = "RECEIVE_BOOKMARKED_ANIME"
+export const RECEIVE_BOOKMARKED_ANIMES = "RECEIVE_BOOKMARKED_ANIMES"
 export const RECEIVE_DELETED_BOOKMARKED_ANIME = "RECEIVE_DELETED_BOOKMARKED_ANIME"
 
 const receiveBookmarkedAnime = (payload) => {
     return {
         type: RECEIVE_BOOKMARKED_ANIME,
+        payload
+    }
+}
+
+const receiveBookmarkedAnimes = (payload) => {
+    return {
+        type: RECEIVE_BOOKMARKED_ANIMES,
         payload
     }
 }
@@ -29,8 +37,8 @@ export const deleteBookmarkedAnime = animeId => dispatch => (
     })
 )
 
-// export const fetchBookmarkedAnimes = () => dispatch => (
-//     BookmarkedAnimeUtil.fetchBookmarkedAnimes().then((bookmarked_anime) => {
-//         dispatch(receiveBookmarkedAnime(bookmarked_anime))
-//     })
-// )
+export const fetchBookmarkedAnimes = () => dispatch => (
+    BookmarkedAnimeUtil.fetchBookmarkedAnimes().then((payload) => {
+        dispatch(receiveBookmarkedAnimes(payload))
+    })
+)

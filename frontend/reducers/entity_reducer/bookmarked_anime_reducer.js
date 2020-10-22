@@ -1,5 +1,5 @@
 import { RECEIVE_ANIME, RECEIVE_ANIMES } from '../../actions/anime_actions'
-import { RECEIVE_BOOKMARKED_ANIME, RECEIVE_DELETED_BOOKMARKED_ANIME } from '../../actions/bookmarked_anime_actions'
+import { RECEIVE_BOOKMARKED_ANIME, RECEIVE_DELETED_BOOKMARKED_ANIME, RECEIVE_BOOKMARKED_ANIMES } from '../../actions/bookmarked_anime_actions'
 
 const bookmarkedAnimeReducer = (state = {}, action) => {
     Object.freeze(state)
@@ -10,7 +10,12 @@ const bookmarkedAnimeReducer = (state = {}, action) => {
             if (!action.payload.bookmarkedAnime) return state;
             nextState[action.payload.bookmarkedAnime.id] = action.payload.bookmarkedAnime
             return nextState
+        case RECEIVE_BOOKMARKED_ANIMES:
+            // debugger
+            if (!action.payload.bookmarkedAnime) return state
+            return action.payload.bookmarkedAnime
         case RECEIVE_BOOKMARKED_ANIME:
+            // debugger
             nextState[action.payload.id] = action.payload
             return nextState
         case RECEIVE_DELETED_BOOKMARKED_ANIME:

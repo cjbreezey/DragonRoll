@@ -1,4 +1,12 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: bookmarked_animes
+#
+#  id         :bigint           not null, primary key
+#  user_id    :integer          not null
+#  anime_id   :integer          not null
+#  bookmarked :boolean          default(FALSE), not null
+#
 
 # This model initially had no columns defined. If you add columns to the
 # model remove the '{}' from the fixture names and add the columns immediately

@@ -13,9 +13,9 @@ export const deleteBookmarkedAnime = id => (
     })
 );
 
-// export const fetchBookmarkedAnimes = () => (
-//     $.ajax({
-//         method: "GET",
-//         url: `/api/animes`
-//     })
-// )
+export const fetchBookmarkedAnimes = () => (
+    $.ajax({
+        method: "GET",
+        url: `/api/bookmarked_animes`
+    })
+)
