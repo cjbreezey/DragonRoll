@@ -34,10 +34,7 @@ In this project, Ruby on Rails acts as a backend API, and React handles handles 
 
 # Anime Show Page:
 
-![AnimeShow](/images/logo.png)
-Format: ![Alt Text](url)
-
-![AnimeShow](ShowPage.png)
+![AnimeShow](https://github.com/cjbreezey/DragonRoll/blob/main/app/assets/images/AnimeShowPage.png)
 
 * Services (job queues, cache servers, search engines, etc.)
 
