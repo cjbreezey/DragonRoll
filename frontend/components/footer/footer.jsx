@@ -6,7 +6,11 @@ const Footer = () => {
             <div className="footer-left col-md-4 col-sm-6">
                 <p className="about">
                     <span> About DragonRoll</span> 
-                    DragonRoll is a clone of the free anime streaming service of Crunchyroll.com. 
+                    DragonRoll, designed by Christopher Lee, is the world's 
+                    most popular anime brand, connecting anime fans in more 
+                    than 200 countries with 360-degree experiences. 
+                    DragonRoll is a clone of the free anime streaming service of 
+                    <a href="https://www.crunchyroll.com/"> Crunchyroll.com.</a>
                 </p>
             </div>
             <div className="footer-center col-md-4 col-sm-6">
