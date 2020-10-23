@@ -10,7 +10,7 @@ const Footer = () => {
                     most popular anime brand, connecting anime fans in more 
                     than 200 countries with 360-degree experiences. 
                     DragonRoll is a clone of the free anime streaming service of 
-                    <a href="https://www.crunchyroll.com/"> Crunchyroll.com.</a>
+                    <a href="https://www.crunchyroll.com/" target="_blank"> Crunchyroll.com.</a>
                 </p>
             </div>
             <div className="footer-center col-md-4 col-sm-6">
@@ -25,11 +25,11 @@ const Footer = () => {
             </div>
             <div class="footer-right col-md-4 col-sm-6">
                 <div>
-                    <a href="https://www.linkedin.com/in/christopher-j-lee/"><i className="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/christopher-j-lee/" target="_blank"><i className="fab fa-linkedin"></i>
                     <p> LinkedIn</p></a>
                 </div>
                 <div>
-                    <a href="https://github.com/cjbreezey/DragonRoll"><i className="fab fa-github"></i>
+                    <a href="https://github.com/cjbreezey/DragonRoll" target='_blank'><i className="fab fa-github"></i>
                     <p>Github</p></a>
                 </div>
             </div>
