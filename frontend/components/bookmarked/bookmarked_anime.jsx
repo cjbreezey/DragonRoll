@@ -36,12 +36,14 @@ class BookmarkedAnime extends React.Component {
             }
 
             return (
-                <div className="anime-container">
-                    <div className='header-container'>
-                        <div className='anime-header'>{displayName} Bookmark List</div>
-                    </div>
-                    <div>
-                        {renderBookmark}
+                <div className="anime-wrapper">
+                    <div className="anime-container">
+                        <div className='header-container'>
+                            <div className='anime-header'>{displayName} Bookmark List</div>
+                        </div>
+                        <div>
+                            {renderBookmark}
+                        </div>
                     </div>
                 </div>
             )
