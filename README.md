@@ -26,7 +26,7 @@ In this project, Ruby on Rails acts as a backend API, and React handles handles 
 
 # Login/Signup Page:
 
-[![Image from Gyazo](https://i.gyazo.com/28c24ab522a3cccae3e1d34d1e5ebb12.gif)](https://gyazo.com/28c24ab522a3cccae3e1d34d1e5ebb12)
+[![Image from Gyazo](https://i.gyazo.com/ca5d1aa13720d670024e7a2f5d08911a.gif)](https://gyazo.com/ca5d1aa13720d670024e7a2f5d08911a)
 
 #  Home Page:
 
