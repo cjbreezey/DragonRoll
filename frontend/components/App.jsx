@@ -15,6 +15,10 @@ const App = (props) => {
     if (props.location.pathname === '/login' || props.location.pathname === '/signup') {
         navbar = ""
     }
+    let footer = <Footer />
+    if (props.location.pathname === '/login' || props.location.pathname === '/signup') {
+        footer = ""
+    }
     return (
         <main>
             {navbar} 
@@ -27,7 +31,7 @@ const App = (props) => {
                 <Route exact path='/' component={AnimeIndexContainer} />
                 <Redirect to='/'>/</Redirect>
             </Switch>
-            <Footer />
+            {footer}
         </main>
     )
 };
