@@ -1,7 +1,6 @@
 # DragonRoll
 
-* DragonRoll is a clone of the popular anime streaming service Crunchyroll. 
-* 
+Inspired by Crunchyroll, DragonRoll is a online anime streaming service that allows anime enthusiasts worldwide to browse the latest and most popular anime, create their own accounts, as well as watch trailer videos of the chosen Anime. With user experience in mind, the front end structure was designed to provide a simple, yet pleasing user-friendly interface 
 
 [DragonRoll Live](https://dragonroll-1.herokuapp.com/#/)
 
@@ -38,8 +37,12 @@ In this project, Ruby on Rails acts as a backend API, and React handles handles 
 
 ![AnimeShow](https://github.com/cjbreezey/DragonRoll/blob/main/app/assets/images/AnimeShowPage.png)
 
-# Trailer Videos
+# Features:
 
-* Fully functional embedded trailer video with a link to the actual website to watch full episodes
+## Anime
 
-![EpisodeShow](https://github.com/cjbreezey/DragonRoll/blob/main/app/assets/images/EpisodeShow.png)
+The true beauty of DragonRoll is shown with its simple yet appealing gallery of anime. With the vast amount of images that need to be rendered, the challenge of making images of different sizes respond properly arose. In order to successfully attach images to the correct anime as well as thumbnails for the correct episode, I had to figure out an effective method to keep track of all my images. I was able to semantically save the image URL (provided by AWS/S3) and attached each small, large, and thumbnail images to the corresponding anime. Once properly attached, I styled each image accordingly to produce the intended results.
+
+# Future Implementations
+
+* Search - allows the user to search for a particular anime and show suggestions based on user input
