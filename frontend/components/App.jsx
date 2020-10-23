@@ -7,6 +7,7 @@ import AnimeIndexContainer from './anime/anime_index_container'
 import AnimeShowContainer from './anime/anime_show_container'
 import EpisodeShowContainer from './anime/episode_show_container'
 import BookmarkedAnimeContainer from './bookmarked/bookmarked_anime_container'
+import Footer from './footer/footer'
 
 
 const App = (props) => {
@@ -26,6 +27,7 @@ const App = (props) => {
                 <Route exact path='/' component={AnimeIndexContainer} />
                 <Redirect to='/'>/</Redirect>
             </Switch>
+            <Footer />
         </main>
     )
 };
