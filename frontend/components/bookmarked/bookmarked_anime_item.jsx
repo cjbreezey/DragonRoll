@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 
 class BookmarkedAnimeItem extends React.Component {
     constructor(props) {
-        debugger
         super(props)
         this.removeFromBookmarks = this.removeFromBookmarks.bind(this)
     }

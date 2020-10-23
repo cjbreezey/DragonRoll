@@ -4,7 +4,7 @@ import AnimeShowEpisodeItem from './anime_show_episode_item'
 
 class AnimeShow extends React.Component {
     constructor(props) {
-        // debugger
+
         super(props);
         this.state = this.props.anime;
     }
@@ -19,7 +19,6 @@ class AnimeShow extends React.Component {
     render() {
         
         const { episodes, createBookmarkedAnime, deleteBookmarkedAnime } = this.props;
-        // debugger
         let bookmark;
         if (this.props.bookmarked)
         bookmark = (

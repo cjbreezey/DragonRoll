@@ -3,7 +3,6 @@ import { login, logout, signup } from "../../actions/session_actions";
 import Navbar from "./navbar";
 
 const mapStateToProps = (state) => {
-    // debugger
     let sessionId = state.session.id
     return ({
         user: state.entities.users[sessionId]

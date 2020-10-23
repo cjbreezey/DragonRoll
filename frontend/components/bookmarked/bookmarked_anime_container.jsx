@@ -4,7 +4,6 @@ import { getBookmarkedAnimes, findCurrentUser } from '../../reducers/selectors'
 import BookmarkedAnime from './bookmarked_anime'
 
 const mapStateToProps = (state, ownProps) => {
-    debugger
     return ({
         user: findCurrentUser(state),
         bookmarkedAnime: getBookmarkedAnimes(state)

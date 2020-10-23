@@ -24,9 +24,7 @@ export const fetchAnimes = (animes) => (dispatch) => (
 )
 
 export const fetchAnime = (animeId) => (dispatch) => {
-    // debugger
     return AnimeAPI.fetchAnime(animeId).then((payload) => {
-        // debugger
         dispatch(receiveAnime(payload))
     })
 }

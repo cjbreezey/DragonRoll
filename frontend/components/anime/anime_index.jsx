@@ -12,7 +12,6 @@ class AnimeIndex extends React.Component {
 
     render() {
         const { animes } = this.props;
-        // debugger
         return (
             <div className='anime-container'>
                 <img src={window.dragonrollAd}/>

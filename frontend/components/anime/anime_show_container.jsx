@@ -6,7 +6,6 @@ import AnimeShow from './anime_show'
 import {findAnimeIdInBookmarks} from '../../reducers/selectors'
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
     return {
     anime: state.entities.animes[ownProps.match.params.animeId],
     episodes: Object.values(state.entities.episodes),

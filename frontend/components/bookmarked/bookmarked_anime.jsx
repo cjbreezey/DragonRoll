@@ -11,7 +11,6 @@ class BookmarkedAnime extends React.Component {
     }
 
     componentDidMount() {
-        debugger
         this.props.fetchBookmarkedAnimes()
             .then(() => this.setState({ mounted: true }))
     }
@@ -21,7 +20,6 @@ class BookmarkedAnime extends React.Component {
     // }
 
     render() {
-            debugger
             if (!this.state.mounted) return null;
 
             let { user, bookmarkedAnime } = this.props;

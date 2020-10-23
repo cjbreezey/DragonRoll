@@ -11,11 +11,9 @@ const bookmarkedAnimeReducer = (state = {}, action) => {
             nextState[action.payload.bookmarkedAnime.id] = action.payload.bookmarkedAnime
             return nextState
         case RECEIVE_BOOKMARKED_ANIMES:
-            // debugger
             if (!action.payload.bookmarkedAnime) return state
             return action.payload.bookmarkedAnime
         case RECEIVE_BOOKMARKED_ANIME:
-            // debugger
             nextState[action.payload.id] = action.payload
             return nextState
         case RECEIVE_DELETED_BOOKMARKED_ANIME:
