@@ -41,7 +41,9 @@ In this project, Ruby on Rails acts as a backend API, and React handles handles 
 
 ## Anime
 
-The true beauty of DragonRoll is shown with its simple yet appealing gallery of anime. With the vast amount of images that need to be rendered, the challenge of making images of different sizes respond properly arose. In order to successfully attach images to the correct anime as well as thumbnails for the correct episode, I had to figure out an effective method to keep track of all my images. I was able to semantically save the image URL (provided by AWS/S3) and attached each small, large, and thumbnail images to the corresponding anime. Once properly attached, I styled each image accordingly to produce the intended results.
+The true beauty of DragonRoll is shown with its simple yet appealing gallery of anime. With the vast amount of images that need to be rendered, the challenge of making images of different sizes respond properly arose. In order to successfully attach images to the correct anime as well as thumbnails for the correct episode, I had to figure out an effective method to keep track of all my images. I was able to semantically save the image URL (provided by AWS/S3) and attached each small, large, and thumbnail images to the corresponding anime. Once properly attached, I styled each image accordingly to produce the intended results. After having images render properly, adding a hover effect that shows a snippet of the description. If the description was too long, it would stop after a certain amount of characters.
+
+
 
 # Future Implementations
 
