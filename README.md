@@ -26,6 +26,8 @@ In this project, Ruby on Rails acts as a backend API, and React handles handles 
 
 # Login/Signup Page:
 
+* Easily switch between Login and Signup pages as well as a demo user login to navigate around the site without having to sign up.
+
 [![Image from Gyazo](https://i.gyazo.com/ca5d1aa13720d670024e7a2f5d08911a.gif)](https://gyazo.com/ca5d1aa13720d670024e7a2f5d08911a)
 
 #  Home Page:
@@ -36,8 +38,8 @@ In this project, Ruby on Rails acts as a backend API, and React handles handles 
 
 ![AnimeShow](https://github.com/cjbreezey/DragonRoll/blob/main/app/assets/images/AnimeShowPage.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+# Trailer Videos
 
-* Deployment instructions
+* Fully functional embedded trailer video with a link to the actual website to watch full episodes
 
-* ...
+![EpisodeShow](https://github.com/cjbreezey/DragonRoll/blob/main/app/assets/images/EpisodeShow.png)
