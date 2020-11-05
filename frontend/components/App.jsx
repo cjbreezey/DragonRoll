@@ -9,7 +9,6 @@ import EpisodeShowContainer from './anime/episode_show_container'
 import BookmarkedAnimeContainer from './bookmarked/bookmarked_anime_container'
 import Footer from './footer/footer'
 
-
 const App = (props) => {
     let navbar = <NavbarContainer />
     if (props.location.pathname === '/login' || props.location.pathname === '/signup') {

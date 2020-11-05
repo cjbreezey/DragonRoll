@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga'
 import React from 'react';
 import ReactDom from 'react-dom'
 import configureStore from './store/store';
@@ -5,6 +6,13 @@ import {login, logout, signup} from './actions/session_actions'
 import Root from './components/root'
 import { fetchAnime, fetchAnimes } from '../frontend/actions/anime_actions';
 import { createBookmarkedAnime } from './actions/bookmarked_anime_actions';
+
+function initializeReactGA() {
+    ReactGA.initialize('G-YCRXFMQNYL');
+    ReactGA.pageview('/https://dragonroll-1.herokuapp.com/#/');
+}
+
+initializeReactGA()
 
 document.addEventListener("DOMContentLoaded", () => {
     let store;
