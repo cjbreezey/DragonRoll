@@ -8,6 +8,10 @@
     <%= favicon_link_tag 'favicon.ico' %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <meta property="og:title" content="Dragonroll">
+    <meta property="og:image" content="<%= image_url('dragonroll-homepage.png') %>" >
+    <meta property="og:description" content="An anime streaming web application inspired by Crunchyroll. Users may browse, watch, and save anime episodes of their liking">
+    <meta property="og:url" content="https://dragonroll-1.herokuapp.com/#/">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
       window.logo = "<%= image_url('logo.png') %>";
