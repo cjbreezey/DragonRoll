@@ -10,14 +10,14 @@ class Search extends React.Component {
     render() {
         // debugger
         const searchedAnime = this.props.anime.map(anime => (
-            <Link key={anime.id} to={`/animes/${anime.id}`}>
-                <div>
+            <Link className="results-link" key={anime.id} to={`/animes/${anime.id}`}>
+                <div className="results-container">
                     <span>{anime.title}</span>
                 </div>
             </Link>
         ))
         return (
-            <div>
+            <div className="results">
                 {searchedAnime}
             </div>
         )

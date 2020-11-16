@@ -100,3 +100,29 @@
     border: none;
     background: transparent;
 }
+
+.search {
+    color: orange;
+}
+
+.results {
+    position: absolute;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+.results-link {
+    display: block;
+}
+
+.results-link:hover {
+    background-color: #dddddd;
+}
+
+.results-container {
+    padding: 5px;
+    min-width: 150px;
+    width: 150px;
+}

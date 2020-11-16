@@ -14,6 +14,13 @@ class AnimeShow extends React.Component {
             this.setState(this.props.anime)
         })
         window.scrollTo(0,0);
+        this.props.fetchAnimes()
+    }
+    
+    componentDidUpdate(prevProps) {
+        if (this.props.match.params.animeId !== prevProps.match.params.animeId) {
+            this.props.fetchAnime(this.props.match.params.animeId);
+        }
     }
 
     render() {

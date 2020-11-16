@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :animes, only: [:show, :index]
     resources :episodes, only: :show
+    resources :navbar, only: :index
     resources :bookmarked_animes, only: [:index, :create, :destroy]
   end
 end
