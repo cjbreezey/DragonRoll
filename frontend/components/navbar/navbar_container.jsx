@@ -1,18 +1,18 @@
 import { connect } from "react-redux";
-import { login, logout, signup } from "../../actions/session_actions";
+import { logout } from "../../actions/session_actions";
 import Navbar from "./navbar";
 
 const mapStateToProps = (state) => {
+    // debugger
     let sessionId = state.session.id
     return ({
-        user: state.entities.users[sessionId]
+        user: state.entities.users[sessionId],
+        anime: Object.values(state.entities.animes)
     })
 }
 
 const mapDispatchToProps = (dispatch) => {
     return ({
-        // signup: (user) => dispatch(signup(user)),
-        // login: (user) => dispatch(login(user)),
         logout: () => dispatch(logout())
     })
 

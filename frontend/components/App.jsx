@@ -27,7 +27,7 @@ const App = (props) => {
                 <ProtectedRoute path="/bookmarked_animes/" component={BookmarkedAnimeContainer} />
                 <AuthRoute path="/login" component={Splash} />
                 <AuthRoute path="/signup" component={Splash} />
-                <Route exact path='/' component={AnimeIndexContainer} />
+                <ProtectedRoute exact path='/' component={AnimeIndexContainer} />
                 <Redirect to='/'>/</Redirect>
             </Switch>
             {footer}
