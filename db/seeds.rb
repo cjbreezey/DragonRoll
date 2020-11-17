@@ -802,6 +802,18 @@ dbs3.thumbnail.attach(io: dbs3_thumbnail, filename: "img_dbs_thumbnail3.jpg")
 dbs4_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/dbs_thumbnail4.jpg')
 dbs4.thumbnail.attach(io: dbs4_thumbnail, filename: "img_dbs_thumbnail4.jpg")
 
+dbs5_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/dbs_thumbnail5.jpg')
+dbs5.thumbnail.attach(io: dbs5_thumbnail, filename: "img_dbs_thumbnail5.jpg")
+
+dbs6_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/dbs_thumbnail6.jpg')
+dbs6.thumbnail.attach(io: dbs6_thumbnail, filename: "img_dbs_thumbnail6.jpg")
+
+dbs7_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/dbs_thumbnail7.jpg')
+dbs7.thumbnail.attach(io: dbs7_thumbnail, filename: "img_dbs_thumbnail7.jpg")
+
+dbs8_thumbnail = open('https://dragonroll-seed.s3-us-west-1.amazonaws.com/dbs_thumbnail8.jpg')
+dbs8.thumbnail.attach(io: dbs8_thumbnail, filename: "img_dbs_thumbnail8.jpg")
+
 tpn1 = Episode.create!(anime_id: 20, title: "121045", genre: "thriller", episode_num: 1)
 tpn2 = Episode.create!(anime_id: 20, title: "131045", genre: "thriller", episode_num: 2)
 tpn3 = Episode.create!(anime_id: 20, title: "181045", genre: "thriller", episode_num: 3)
