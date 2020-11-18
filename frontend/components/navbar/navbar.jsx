@@ -1,6 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import Search from './search'
+import { NavLink, Link } from "react-router-dom";
+// import Search from './search'
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -21,15 +21,23 @@ class Navbar extends React.Component {
         const filteredAnime = this.props.anime.filter(anime => (
             anime.title.toLowerCase().includes(e.target.value)
         ))
-
         this.setState({ filteredAnime: filteredAnime, searchBar: e.target.value})
     }
 
     clearSearch() {
-        this.setState({ searchBar: '' });
+        this.setState({ searchBar: '', filteredAnime: [] });
     }
 
     render() {
+
+        const searchedAnime = this.state.filteredAnime.map(anime => (
+            <Link className="results-link" key={anime.id} to={`/animes/${anime.id}`}>
+                <div className="results-container">
+                    <span>{anime.title}</span>
+                </div>
+            </Link>
+        ))
+
         return (
             <div className='loggedOut-nav-bar'>
                 <div className='nav'>
@@ -81,10 +89,12 @@ class Navbar extends React.Component {
                             </li>
                             <li className='search-container'>
                                 <form>
-                                    <input className="search" type="text" placeholder="Search..." name="search" value={ this.state.searchBar } onChange={ this.animeSearch } onBlur={this.clearSearch} />
+                                    <input className="search" type="text" placeholder="Search..." value={ this.state.searchBar } onChange={ this.animeSearch } />
                                     <button type='submit'><i className="fa fa-search"></i></button>
                                 </form>
-                                <Search anime={this.state.filteredAnime} />
+                                <div className="results" onClick={this.clearSearch}>
+                                    {searchedAnime}
+                                </div>
                             </li>
                         </ul>
                     </nav>

@@ -117,6 +117,10 @@
     display: block;
 }
 
+.results-link::after {
+    display: none;
+}
+
 .results-link:hover {
     background-color: #dddddd;
 }
