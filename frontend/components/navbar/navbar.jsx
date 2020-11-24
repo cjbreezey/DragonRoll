@@ -58,6 +58,11 @@ class Navbar extends React.Component {
                                     <img className='github' src={github} />
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://angel.co/u/christopher-lee-93" target="_blank">
+                                    <img className='angelist' src={angelist} />
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <nav className='navbar-links'>

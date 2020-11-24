@@ -32,6 +32,10 @@ const Footer = () => {
                     <a href="https://github.com/cjbreezey/DragonRoll" target='_blank'><i className="fab fa-github"></i>
                     <p>Github</p></a>
                 </div>
+                <div>
+                    <a href="https://angel.co/u/christopher-lee-93" target='_blank'><i className="fab fa-angellist"></i>
+                    <p>AngelList</p></a>
+                </div>
             </div>
         </footer>
     )
