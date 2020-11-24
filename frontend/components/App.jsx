@@ -1,5 +1,5 @@
 import React from 'react'
-import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
+import { Redirect, Switch, withRouter } from 'react-router-dom'
 import { AuthRoute, ProtectedRoute } from '../util/route_util'
 import Splash from './splash/splash'
 import NavbarContainer from './navbar/navbar_container'

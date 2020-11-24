@@ -4,7 +4,6 @@
 }
 
 .bookmark-item-text {
-    // max-width: 550px;
     padding: 10px;
 }
 
@@ -12,7 +11,6 @@
     font-size: 1.5em;
     color: #38a3d9;
     font-family: Arial, Helvetica, sans-serif;
-    // padding-right: 1.05em;
 }
 
 .bookmark-item-description {
@@ -22,14 +20,12 @@
     color: gray;
 }
 
-.fas {
-    padding-left: 10px;
+.fas, .far {
     cursor: pointer;
 }
 
 .bookmark-item-container {
     display: flex;
-    // margin-top: 10px;
     border-bottom: 2px solid gray;
 }
 

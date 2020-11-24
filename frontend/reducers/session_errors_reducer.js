@@ -2,13 +2,11 @@ import {RECEIVE_CURRENT_USER, RECEIVE_ERRORS, CLEAR_SESSION_ERRORS} from '../act
 
 export default (state = [], action) => {
     Object.freeze(state);
-    let nextState = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_CURRENT_USER:
             return []
         case RECEIVE_ERRORS:
             return action.errors
-        //return the array of errors
         case CLEAR_SESSION_ERRORS:
             return []
         default:

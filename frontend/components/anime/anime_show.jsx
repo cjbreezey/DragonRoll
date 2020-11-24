@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import AnimeShowEpisodeItem from './anime_show_episode_item'
 
 class AnimeShow extends React.Component {
@@ -32,7 +31,7 @@ class AnimeShow extends React.Component {
         bookmark = (
             <i
             onClick={() => deleteBookmarkedAnime(this.props.anime.id)}
-            className="fas fa-orange title-bookmark fa-bookmark"
+            className="fa-orange title-bookmark fas fa-bookmark"
             ></i>
             )
         else

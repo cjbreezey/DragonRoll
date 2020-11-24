@@ -1,10 +1,8 @@
-import { withRouter} from 'react-router-dom'
 import { connect } from 'react-redux'
 import { fetchAnime, fetchAnimes } from '../../actions/anime_actions'
 import { createBookmarkedAnime, deleteBookmarkedAnime } from '../../actions/bookmarked_anime_actions'
 import AnimeShow from './anime_show'
 import {findAnimeIdInBookmarks} from '../../reducers/selectors'
-import { fetchNavbarInfo } from '../../actions/navbar_actions'
 
 const mapStateToProps = (state, ownProps) => {
     return {

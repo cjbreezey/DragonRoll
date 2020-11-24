@@ -7,7 +7,6 @@ const mapStateToProps = (state, ownProps) => {
     return ({
         user: findCurrentUser(state),
         bookmarkedAnime: getBookmarkedAnimes(state)
-        // animes: state.entities.animes
     })
 }
 

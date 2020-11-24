@@ -11,7 +11,3 @@ export const getBookmarkedAnimes = (state) => {
 export const findCurrentUser = state => {
     return state.session.id ? state.entities.users[state.session.id] : null
 };
-
-
-// array of all animes that user has bookmarked
-// 

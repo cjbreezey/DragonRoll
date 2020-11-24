@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import {EmptyBookmark} from './empty_bookmark'
 import BookmarkedAnimeItem from './bookmarked_anime_item'
 
@@ -14,10 +13,6 @@ class BookmarkedAnime extends React.Component {
         this.props.fetchBookmarkedAnimes()
             .then(() => this.setState({ mounted: true }))
     }
-
-    // removeFromBookmarks() {
-    //     this.props.deleteBookmarkedAnime(this.props.anime.id)
-    // }
 
     render() {
             if (!this.state.mounted) return null;

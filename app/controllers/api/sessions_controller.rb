@@ -11,8 +11,6 @@ class Api::SessionsController < ApplicationController
             render 'api/users/show'
         else
             render json:["Invalid credentials"], status: 422
-            # we dont need to redirect anymore because we are just sending back json
-            # for the front end
         end
     end
 
@@ -22,7 +20,6 @@ class Api::SessionsController < ApplicationController
             render json: {}
         else  
             render json: ["Current User not logged in?"], status: 404
-            # leave in bracket because we would potentially iterate over errors
         end
     end
 end

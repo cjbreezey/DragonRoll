@@ -1,8 +1,6 @@
 import { connect } from "react-redux";
 import SessionForm from "./session_form"
-import { login, receiveCurrentUser, receiveErrors } from "../../actions/session_actions";
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { login } from "../../actions/session_actions";
 
 const mapStateToProps = (state, ownProps) => {
     let errors = state.errors.session

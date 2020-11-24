@@ -1,4 +1,4 @@
-import { RECEIVE_ANIME, RECEIVE_ANIMES } from '../../actions/anime_actions'
+import { RECEIVE_ANIME } from '../../actions/anime_actions'
 import { RECEIVE_BOOKMARKED_ANIME, RECEIVE_DELETED_BOOKMARKED_ANIME, RECEIVE_BOOKMARKED_ANIMES } from '../../actions/bookmarked_anime_actions'
 
 const bookmarkedAnimeReducer = (state = {}, action) => {

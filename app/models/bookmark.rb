@@ -9,8 +9,4 @@
 #
 class Bookmark < ApplicationRecord
 
-    # belongs_to :user
-    # has_many :bookmarked_anime, dependent: :destroy
-    # has_many :episodes, through: :bookmarked_anime
-
 end

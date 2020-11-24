@@ -6,7 +6,6 @@ const animeReducer = (state = {}, action) => {
     let nextState = Object.assign({}, state)
     switch(action.type) {
         case RECEIVE_ANIMES:
-
             return action.payload
         case RECEIVE_ANIME:
             return action.payload.animes

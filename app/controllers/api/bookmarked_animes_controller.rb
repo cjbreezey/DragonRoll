@@ -5,12 +5,9 @@ class Api::BookmarkedAnimesController < ApplicationController
     end
 
     def index
-        # @bookmarked_animes = BookmarkedAnime.all.where(user_id: current_user.id)
         @bookmarked_animes = current_user.bookmarked_animes
         @anime = current_user.animes
     end
-
-    # bookmark Index needed to show all bookmarks on page
 
     def create
         @bookmarked_anime = BookmarkedAnime.new(user_id: current_user.id, anime_id: params[:animeId])
