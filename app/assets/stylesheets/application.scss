@@ -12,8 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
-
+@import "font-awesome";
 @import './_reset.css';
 @import './session/login_signup.scss';
 @import './navbar/navbar.scss';
